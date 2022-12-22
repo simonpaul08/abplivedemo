@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Cambay&family=Hind+Siliguri&family=Hind+Vadodara&family=Noto+Sans:wght@300;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&family=Cambay&family=Hind+Siliguri&family=Hind+Vadodara&family=Noto+Sans:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome -->
@@ -235,20 +235,18 @@
                         </ul>
                         <div class="col-md-2">
                             <div class="selectpicker d-flex justify-content-center align-items-center">
-                                <i class="fa fa-globe mb-1" aria-hidden="true" style="margin-right:-12px"></i>
-                                <select class="form-control-select bg-trans col-md-3" data-width="fit"
-                                    style="font-size:1rem;appearance: none;">
-                                    <option
-                                        data-content="&lt;span class=&quot;flag-icon flag-icon-us&quot;&gt;&lt;/span&gt; English">
-                                        Select Language</option>
-                                    <option
-                                        data-content="&lt;span class=&quot;flag-icon flag-icon-us&quot;&gt;&lt;/span&gt; English">
-                                        English</option>
-                                    <option
-                                        data-content="&lt;span class=&quot;flag-icon flag-icon-mx&quot;&gt;&lt;/span&gt; Español">
-                                        Español</option>
-                                </select>
-                                <i class="fa-solid fa-chevron-down down-arrow-icon"></i>
+                                <div class="select-language d-flex justify-content-center align-items-center">
+                                    <i class="fa fa-globe mb-1" aria-hidden="true"></i>
+                                    <p class="mb-0 mx-1">Select Language</p>
+                                    <i class="fa-solid fa-chevron-down mb-1"></i>
+                                    <div class="select-language-content">
+                                        <div class="language-item py-1 px-2">Hindi</div>
+                                        <div class="language-item py-1 px-2">English</div>
+                                        <div class="language-item py-1 px-2">Gujarati</div>
+                                        <div class="language-item py-1 px-2">Marathi</div>
+                                    </div>
+                                </div>
+
                             </div>
 
                         </div>
@@ -397,12 +395,12 @@
                                 <p class="search-or">Or</p>
                             </div>
                             <div class="row" style="justify-content: center;">
-                                <div class="col-md-5">
+                                <div class="col-md-8">
                                     <input type="search" class="mob-mb form-control line-height custom-focus border-none"
                                         placeholder="Enter Pincode to Search Post Office" name="uname"
                                         style="font-size:13px!important;">
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <button class="btn-search" type="button">
                                         Search
                                     </button>
@@ -643,6 +641,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card2" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="card-body">
@@ -684,6 +683,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card3" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="card-body">
@@ -726,6 +726,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card4" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="card-body">
@@ -769,6 +770,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card5" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -846,6 +848,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card6" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -920,6 +923,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card7" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -953,6 +957,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card8" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -981,18 +986,19 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card9" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
                                     <div class="card-inline-list card-inline-list-dark">
-                                        <p> India is the last </p>
-                                        <p> Sutahata Post Office is located at East Midnapore, West Bengal and
+                                        <p class="fw-7"> India is the last </p>
+                                        <p class="fw-7"> Sutahata Post Office is located at East Midnapore, West Bengal and
                                             Sutahata Pin Code is 721635.
                                             NA Post Office is a Sub Post Office, Which comes under the Head Post
                                             Office Tamluk H.O.
-                                        </p>tact Number for Sutahata Post Office, West
-                                        Bengal ?
-                                        <p> You may contact the Sutahata Post Office officials at this given
+                                        tact Number for Sutahata Post Office, West
+                                        Bengal ?</p>
+                                        <p class="fw-7"> You may contact the Sutahata Post Office officials at this given
                                             number:
                                             03224-266212 </p>
                                     </div>
@@ -1008,17 +1014,20 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card10" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
+                                    <p class="fw-7">Each digit in the 6-digit number has a specific meaning. The first digit designates which is the overall geographical region, and the first 2 digits designate the postal circle or sub-region. The third digit designates the sorting district. Thus, the first 3 digits collectively designate the postal district while the last 3 digits indicate the specific post office within the district.</p>
+                                    <p class="fw-7">Here's an example of decoding your pin code. The pin code of Central Delhi is 110001.</p>
                                     <img src="./Home abp_files/postal-code.png">
                                     <ul style="margin-top:10px;">
-                                        <li>This first digit indicates: northern region = 1</li>
-                                        <li>The first 2 digits indicate: postal circle Delhi = 11</li>
-                                        <li>The third digit indicates: Sorting district = 0</li>
-                                        <li>The last 3 digits indicate: the specific post office (Connaught Place) = 001
+                                        <li class="fw-7">This first digit indicates: northern region = 1</li>
+                                        <li class="fw-7">The first 2 digits indicate: postal circle Delhi = 11</li>
+                                        <li class="fw-7">The third digit indicates: Sorting district = 0</li>
+                                        <li class="fw-7">The last 3 digits indicate: the specific post office (Connaught Place) = 001
                                         </li>
-                                        <li>Thus the 6-digit Pincode for Connaught place in Central Delhi = 110001</li>
+                                        <li class="fw-7">Thus the 6-digit Pincode for Connaught place in Central Delhi = 110001</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1033,6 +1042,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card11" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -1051,6 +1061,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
+                            <hr class="card-hr-line">
                             <div id="close-card12" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -1141,11 +1152,8 @@
                                             </div>
                                         </div>
                                         <div class="col-md-7">
-                                            <p class="slider-text"> Each digit in the 6-digit number has a specific
-                                                meaning. The
-                                                first digit designates which is the overall geographical region,
-                                                and the first 2 digits designate the postal circle or
-                                                sub-region.</p>
+                                                <p class="fw-7 slider-text">Each digit in the 6-digit number has a specific meaning. The first digit designates which is the overall geographical region, and the first 2 digits designate the postal circle or sub-region. The third digit designates the sorting district. Thus, the first 3 digits collectively designate the postal district while the last 3 digits indicate the specific post office within the district.</p>
+                                    <p class="fw-7">Here's an example of decoding your pin code. The pin code of Central Delhi is 110001.</p>
                                             <div class="slider-btn">
                                                 <button class="btn-search">Readmore</button>
                                             </div>
@@ -1178,22 +1186,22 @@
                                 <div class="panel-heading"> 1st 2 Digits of Pincode, Postal Circle </div>
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 11 - Delhi </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 12-13 Haryana </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 14-16 Punjab </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 17 - Himachal Pradesh </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 18 - 19 Jammu &amp; Kashmir
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 11 - Delhi </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 12-13 Haryana </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 14-16 Punjab </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 17 - Himachal Pradesh </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 18 - 19 Jammu &amp; Kashmir
                                 </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 20 - 28 Uttar Pradesh </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 30 - 34 Rajasthan </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 36 - 39 Gujarat </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 40 - 44 Maharashtra </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 45 - 48 Madhya Pradesh </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 49 - Chhattisgarh </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 50 - 53 Andhra Pradesh </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 50 - 53 Telangana </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i> 56 - 59 Karnataka </li>
-                                <li class="list-group-item"> <i class="fa fa-check"></i>7. Hover me</li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 20 - 28 Uttar Pradesh </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 30 - 34 Rajasthan </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 36 - 39 Gujarat </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 40 - 44 Maharashtra </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 45 - 48 Madhya Pradesh </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 49 - Chhattisgarh </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 50 - 53 Andhra Pradesh </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 50 - 53 Telangana </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 56 - 59 Karnataka </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i>7. Hover me</li>
                             </ul>
                         </div>
                     </div>

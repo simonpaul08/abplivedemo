@@ -46,6 +46,9 @@
     <link rel="stylesheet" href="./Home abp_files/responsive.css">
     <link rel="stylesheet" href="./Home abp_files/font-awesome.min(1).css">
     <link rel="icon" type="image/x-icon" href="http://cadyinfotech.com/pincode/images/favicon.png">
+    <!-- Unicorn Icon -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
 
 
 
@@ -100,9 +103,49 @@
                         <button class="dropbtn gradient-text">PinCode<i
                                 class="fa-solid fa-sort-down ms-2 dropdown-icon"></i></button>
                         <div class="dropdown-content">
-                            <a href="http://cadyinfotech.com/pincode/#">Link 1</a>
-                            <a href="http://cadyinfotech.com/pincode/#">Link 2</a>
-                            <a href="http://cadyinfotech.com/pincode/#">Link 3</a>
+                            <div class="d-flex justify-content-center-align-items-center flag-dropdown flex-wrap">
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/ad.svg"
+                                            alt="flag" /><span>Andorra</span></p>
+                                </div>
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/ae.svg" alt="flag" /><span>United Arab
+                                            Emirates</span></p>
+                                </div>
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/af.svg"
+                                            alt="flag" /><span>Afghanistan</span></p>
+                                </div>
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/ag.svg" alt="flag" /><span>Antigua and
+                                            Barbuda</span></p>
+                                </div>
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/ai.svg"
+                                            alt="flag" /><span>Anguilla</span></p>
+                                </div>
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/al.svg"
+                                            alt="flag" /><span>Albania</span></p>
+                                </div>
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/am.svg"
+                                            alt="flag" /><span>Armenia</span></p>
+                                </div>
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/ao.svg"
+                                            alt="flag" /><span>Angola</span></p>
+                                </div>
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/aq.svg"
+                                            alt="flag" /><span>Antarctica</span></p>
+                                </div>
+                                <div class="flag-dropdown-col">
+                                    <p class="flag-dropdown-item"><img src="./1x1/ar.svg"
+                                            alt="flag" /><span>Argentina</span></p>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
@@ -234,16 +277,16 @@
 
                         </ul>
                         <div class="col-md-2">
-                            <div class="selectpicker d-flex justify-content-center align-items-center">
-                                <div class="select-language d-flex justify-content-center align-items-center">
+                            <div class="selectpicker d-flex justify-content-end align-items-center">
+                                <div class="select-language d-flex justify-content-end align-items-center">
                                     <i class="fa fa-globe mb-1" aria-hidden="true"></i>
-                                    <p class="mb-0 mx-1">Select Language</p>
+                                    <p class="mb-0 mx-1" id="select-language-text">Select Language</p>
                                     <i class="fa-solid fa-chevron-down mb-1"></i>
-                                    <div class="select-language-content">
-                                        <div class="language-item py-1 px-2">Hindi</div>
-                                        <div class="language-item py-1 px-2">English</div>
-                                        <div class="language-item py-1 px-2">Gujarati</div>
-                                        <div class="language-item py-1 px-2">Marathi</div>
+                                    <div class="select-language-content hide">
+                                        <div class="language-item">Hindi</div>
+                                        <div class="language-item">English</div>
+                                        <div class="language-item">Gujarati</div>
+                                        <div class="language-item">Marathi</div>
                                     </div>
                                 </div>
 
@@ -261,19 +304,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-2 large-view-only">
-                    <div class="add-box">
-                        <img src="./Home abp_files/add-left.png" class="img-fluid">
+                    <div class="d-flex justify-content-center align-items-center ad-left">
+                        196 X 404
                     </div>
-                    <div class="add-box">
-                        <img src="./Home abp_files/add-right.png" class="img-fluid">
+                    <div class="d-flex justify-content-center align-items-center ad-left-2">
+                        196 X 94
                     </div>
-                    <div class="add-box">
-                        <img src="./Home abp_files/add-left.png" class="img-fluid">
+                    <div class="d-flex justify-content-center align-items-center ad-left">
+                        196 X 404
                     </div>
                 </div>
                 <div class="col-12 col-md-7">
                     <div class="add-box large-view-only">
-                        <img src="./Home abp_files/add-top.png" class="img-fluid">
+                        <!-- <img src="./Home abp_files/add-top.png" class="img-fluid"> -->
+                        <div class="d-flex justify-content-center align-items-center ad-top">
+                            746 X 127
+                        </div>
                     </div>
                     <div class="search-area-container">
                         <div class="main-title">
@@ -285,43 +331,22 @@
                         <div class="search-area">
                             <div class="row">
                                 <div class="col-6 col-md-3 mob-mb" style="padding-right:0;">
-                                    <div class="form-control-select group-select custom-focus"
-                                        style="display:flex;padding: 0;">
-                                        <select id="country-select" class="country-select">
-                                            <option value="0" selected="" disabled="">Select Country</option>
-                                            <option value="1"><span class="fi fi-gr fis"></span>India</option>
-                                            <option value="2">Bangladesh</option>
-                                            <option value="3">Nepal</option>
-                                            <option value="4">Bhutan</option>
-                                        </select>
-                                        <div class="search-btn-group">
-                                            <div id="down-arrow" class="svg-left">
-                                                <svg style="height:12px" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 512 512">
-                                                    <path
-                                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                            <div class="search-close" onclick="Reset();" id="close"
-                                                style="display:none">
-                                                <i class="fa fa-close fa-left"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <div class="form-control-select group-select custom-focus" style="padding: 0;">
 
-                                <div class="col-6 col-md-3 mob-mb" style="padding-right:0;">
-                                    <div class="form-control-select group-select custom-focus"
-                                        style="display:flex;padding: 0;">
-                                        <select id="state-select" class="state-select">
-                                            <option value="0" selected="" disabled="">Select State</option>
-                                            <option value="1">Gujarat</option>
-                                            <option value="2">Telangana</option>
-                                            <option value="3">Nepal</option>
-                                            <option value="4">Bhutan</option>
-                                        </select>
                                         <div class="search-btn-group">
+                                            <div class="wrapper wrapper-countries">
+                                                <div class="select-btn select-btn-countries">
+                                                    <span>Select Country</span>
+                                                </div>
+                                                <div class="content content-countries">
+                                                    <div class="search">
+                                                        <i class="uil uil-search"></i>
+                                                        <input spellcheck="false" type="text" placeholder="Search"
+                                                            class="input-countries">
+                                                    </div>
+                                                    <ul class="options options-countries"></ul>
+                                                </div>
+                                            </div>
                                             <div id="down-arrow-state" class="svg-left">
                                                 <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 512 512">
@@ -330,26 +355,29 @@
                                                     </path>
                                                 </svg>
                                             </div>
-                                            <div class="search-close" onclick="Reset1();" id="close-state"
-                                                style="display:none">
-                                                <i class="fa fa-close fa-left" style="font-size:14px;"></i>
-                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
 
                                 <div class="col-6 col-md-3 mob-mb" style="padding-right:0;">
-                                    <div class="form-control-select group-select custom-focus"
-                                        style="display:flex;padding: 0;">
-                                        <select id="dis-select" class="dis-select">
-                                            <option value="0" selected="" disabled="">Select District</option>
-                                            <option value="1">Gujarat</option>
-                                            <option value="2">Telangana</option>
-                                            <option value="3">Nepal</option>
-                                            <option value="4">Bhutan</option>
-                                        </select>
+                                    <div class="form-control-select group-select custom-focus" style="padding: 0;">
+
                                         <div class="search-btn-group">
-                                            <div id="down-arrow-dis" class="svg-left">
+                                            <div class="wrapper wrapper-state">
+                                                <div class="select-btn select-btn-state">
+                                                    <span>Select State</span>
+                                                </div>
+                                                <div class="content content-state">
+                                                    <div class="search">
+                                                        <i class="uil uil-search"></i>
+                                                        <input spellcheck="false" type="text" placeholder="Search"
+                                                            class="input-state">
+                                                    </div>
+                                                    <ul class="options options-state"></ul>
+                                                </div>
+                                            </div>
+                                            <div id="down-arrow-state" class="svg-left">
                                                 <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 512 512">
                                                     <path
@@ -357,25 +385,58 @@
                                                     </path>
                                                 </svg>
                                             </div>
-                                            <div class="search-close" onclick="Reset2();" id="close-dis"
-                                                style="display:none">
-                                                <i class="fa fa-close fa-left" style="font-size:14px;"></i>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-6 col-md-3 mob-mb" style="padding-right:0;">
+                                    <div class="form-control-select group-select custom-focus" style="padding: 0;">
+
+                                        <div class="search-btn-group">
+                                            <div class="wrapper wrapper-district">
+                                                <div class="select-btn select-btn-district">
+                                                    <span>Select District</span>
+                                                </div>
+                                                <div class="content content-district">
+                                                    <div class="search">
+                                                        <i class="uil uil-search"></i>
+                                                        <input spellcheck="false" type="text" placeholder="Search"
+                                                            class="input-district">
+                                                    </div>
+                                                    <ul class="options options-district"></ul>
+                                                </div>
+                                            </div>
+                                            <div id="down-arrow-district" class="svg-left">
+                                                <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                                                    </path>
+                                                </svg>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-3 mob-mb mob-pr">
-                                    <div class="form-control-select group-select custom-focus"
-                                        style="display:flex;padding: 0;">
-                                        <select id="post-select" class="post-select svg-left-post">
-                                            <option value="0" selected="" disabled="">Post office name</option>
-                                            <option value="1">Sutahata</option>
-                                            <option value="2">Suta</option>
-                                            <option value="3">Sutahata</option>
-                                            <option value="4">Post</option>
-                                        </select>
+                                    <div class="form-control-select group-select custom-focus" style="padding: 0;">
+
                                         <div class="search-btn-group">
-                                            <div id="down-arrow-post" class="svg-left-post">
+                                            <div class="wrapper wrapper-post">
+                                                <div class="select-btn select-btn-post">
+                                                    <span>Select Post</span>
+                                                </div>
+                                                <div class="content content-post">
+                                                    <div class="search">
+                                                        <i class="uil uil-search"></i>
+                                                        <input spellcheck="false" type="text" placeholder="Search"
+                                                            class="input-post">
+                                                    </div>
+                                                    <ul class="options options-post"></ul>
+                                                </div>
+                                            </div>
+                                            <div id="down-arrow-post" class="svg-left">
                                                 <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 512 512">
                                                     <path
@@ -383,27 +444,70 @@
                                                     </path>
                                                 </svg>
                                             </div>
-                                            <div class="search-close" onclick="Reset3();" id="close-post"
-                                                style="display:none">
-                                                <i class="fa fa-close fa-left-post"></i>
-                                            </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="search-or-area">
                                 <p class="search-or">Or</p>
                             </div>
-                            <div class="row" style="justify-content: center;">
-                                <div class="col-md-8">
-                                    <input type="search" class="mob-mb form-control line-height custom-focus border-none"
-                                        placeholder="Enter Pincode to Search Post Office" name="uname"
-                                        style="font-size:13px!important;">
+                            <div class="row pincode-area" style="justify-content: center;">
+                                <div class="col-md-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="company-logo">
+                                            <img src="./Home abp_files/google.png" alt="google">
+                                        </div>
+                                        <div
+                                            class="country-pincode-search d-flex justify-content-start align-items-center">
+                                            <img src="./1x1/in.svg" alt="google" class="pincode-search-img">
+                                            <p class="mb-0 mt-1 me-3 pincode-search-text">IN</p>
+                                            <div id="down-arrow-state" style="cursor: pointer;">
+                                                <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 512 512">
+                                                    <path
+                                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                            <div class="country-pincode-options">
+                                                <ul class="country-pincode-options-ul">
+                                                    <li class="country-pincode-item">
+                                                        <img src="./1x1/in.svg" alt="flag-icon" data-item="in">
+                                                        <p class="mb-0 mt-1">IN</p>
+                                                    </li>
+                                                    <li class="country-pincode-item">
+                                                        <img src="./1x1/us.svg" alt="flag-icon" data-item="us">
+                                                        <p class="mb-0 mt-1">US</p>
+                                                    </li>
+                                                    <li class="country-pincode-item">
+                                                        <img src="./1x1/ar.svg" alt="flag-icon" data-item="ar">
+                                                        <p class="mb-0 mt-1">AR</p>
+                                                    </li>
+                                                    <li class="country-pincode-item">
+                                                        <img src="./1x1/br.svg" alt="flag-icon" data-item="br">
+                                                        <p class="mb-0 mt-1">BR</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <button class="btn-search" type="button">
-                                        Search
+                                <div class="col-md-6">
+                                    <input type="search" class="mob-mb form-control line-height border-none"
+                                        placeholder="Enter Pincode to Search Post Office" name="uname"
+                                        style="font-size:13px!important; border: none;" id="pincode-input">
+                                </div>
+                                <div class="col-md-3">
+                                    <button class="btn-search" type="button" id="pincode-btn">
+                                        <i class="uil uil-search"></i> Search
                                     </button>
+                                </div>
+                                <div class="pincode-options">
+                                    <ul class="pincode-ul">
+
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -419,7 +523,6 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
                             <div id="close-card">
                                 <div class="card-body">
                                     <h5> Sutahata Pin Code is 721635. Sutahata is located in East Medinipur in West
@@ -493,7 +596,9 @@
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 table-row align-items-start">
                                                     <p class="col-6 col-md-6 table-title">Contact Address</p>
-                                                    <p class="col-6 col-md-6 table-des">Postmaster, Post Office SUTAHATA (SUB OFFICE), EAST MEDINIPUR, WEST BENGAL (WB), India (IN), Pin Code - 721635</p>
+                                                    <p class="col-6 col-md-6 table-des">Postmaster, Post Office SUTAHATA
+                                                        (SUB OFFICE), EAST MEDINIPUR, WEST BENGAL (WB), India (IN), Pin
+                                                        Code - 721635</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -572,7 +677,6 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
                             <div id="close-card1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="card-body">
@@ -641,7 +745,6 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
                             <div id="close-card2" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="card-body">
@@ -683,7 +786,6 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
                             <div id="close-card3" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="card-body">
@@ -726,7 +828,6 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
                             <div id="close-card4" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="card-body">
@@ -770,7 +871,6 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
                             <div id="close-card5" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -848,7 +948,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
+
                             <div id="close-card6" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -923,7 +1023,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
+
                             <div id="close-card7" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -957,7 +1057,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
+
                             <div id="close-card8" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -986,19 +1086,21 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
+
                             <div id="close-card9" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
                                     <div class="card-inline-list card-inline-list-dark">
                                         <p class="fw-7"> India is the last </p>
-                                        <p class="fw-7"> Sutahata Post Office is located at East Midnapore, West Bengal and
+                                        <p class="fw-7"> Sutahata Post Office is located at East Midnapore, West Bengal
+                                            and
                                             Sutahata Pin Code is 721635.
                                             NA Post Office is a Sub Post Office, Which comes under the Head Post
                                             Office Tamluk H.O.
-                                        tact Number for Sutahata Post Office, West
-                                        Bengal ?</p>
-                                        <p class="fw-7"> You may contact the Sutahata Post Office officials at this given
+                                            tact Number for Sutahata Post Office, West
+                                            Bengal ?</p>
+                                        <p class="fw-7"> You may contact the Sutahata Post Office officials at this
+                                            given
                                             number:
                                             03224-266212 </p>
                                     </div>
@@ -1014,20 +1116,28 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
+
                             <div id="close-card10" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
-                                    <p class="fw-7">Each digit in the 6-digit number has a specific meaning. The first digit designates which is the overall geographical region, and the first 2 digits designate the postal circle or sub-region. The third digit designates the sorting district. Thus, the first 3 digits collectively designate the postal district while the last 3 digits indicate the specific post office within the district.</p>
-                                    <p class="fw-7">Here's an example of decoding your pin code. The pin code of Central Delhi is 110001.</p>
+                                    <p class="fw-7">Each digit in the 6-digit number has a specific meaning. The first
+                                        digit designates which is the overall geographical region, and the first 2
+                                        digits designate the postal circle or sub-region. The third digit designates the
+                                        sorting district. Thus, the first 3 digits collectively designate the postal
+                                        district while the last 3 digits indicate the specific post office within the
+                                        district.</p>
+                                    <p class="fw-7">Here's an example of decoding your pin code. The pin code of Central
+                                        Delhi is 110001.</p>
                                     <img src="./Home abp_files/postal-code.png">
                                     <ul style="margin-top:10px;">
                                         <li class="fw-7">This first digit indicates: northern region = 1</li>
                                         <li class="fw-7">The first 2 digits indicate: postal circle Delhi = 11</li>
                                         <li class="fw-7">The third digit indicates: Sorting district = 0</li>
-                                        <li class="fw-7">The last 3 digits indicate: the specific post office (Connaught Place) = 001
+                                        <li class="fw-7">The last 3 digits indicate: the specific post office (Connaught
+                                            Place) = 001
                                         </li>
-                                        <li class="fw-7">Thus the 6-digit Pincode for Connaught place in Central Delhi = 110001</li>
+                                        <li class="fw-7">Thus the 6-digit Pincode for Connaught place in Central Delhi =
+                                            110001</li>
                                     </ul>
                                 </div>
                             </div>
@@ -1042,7 +1152,7 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
+
                             <div id="close-card11" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -1061,7 +1171,6 @@
                                     <i class="fa fa-times" aria-hidden="true"></i>
                                 </div>
                             </div>
-                            <hr class="card-hr-line">
                             <div id="close-card12" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
@@ -1152,8 +1261,14 @@
                                             </div>
                                         </div>
                                         <div class="col-md-7">
-                                                <p class="fw-7 slider-text">Each digit in the 6-digit number has a specific meaning. The first digit designates which is the overall geographical region, and the first 2 digits designate the postal circle or sub-region. The third digit designates the sorting district. Thus, the first 3 digits collectively designate the postal district while the last 3 digits indicate the specific post office within the district.</p>
-                                    <p class="fw-7">Here's an example of decoding your pin code. The pin code of Central Delhi is 110001.</p>
+                                            <p class="fw-7 slider-text">Each digit in the 6-digit number has a specific
+                                                meaning. The first digit designates which is the overall geographical
+                                                region, and the first 2 digits designate the postal circle or
+                                                sub-region. The third digit designates the sorting district. Thus, the
+                                                first 3 digits collectively designate the postal district while the last
+                                                3 digits indicate the specific post office within the district.</p>
+                                            <p class="fw-7">Here's an example of decoding your pin code. The pin code of
+                                                Central Delhi is 110001.</p>
                                             <div class="slider-btn">
                                                 <button class="btn-search">Readmore</button>
                                             </div>
@@ -1162,12 +1277,385 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Name wise district -->
+
+                        <div class="card accordion" id="accordionPanelsStayOpenExample">
+                            <div class="card-header">
+                                <h6 class="title-secondary">India Country State Name Wise District</h6>
+                                <div class="close-icon11 close-icon-css">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div id="close-card11" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionPanelsStayOpenExample">
+                                <div class="card-body" style="padding: 0;">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="card-sidebar">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Delhi <i
+                                                        class="fa-solid fa-chevron-right mb-1"></i></li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Mumbai
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Punjab
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Assam <i
+                                                        class="fa-solid fa-chevron-right mb-1"></i></li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">
+                                                    Rajasthan <i class="fa-solid fa-chevron-right mb-1"></i></li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-main-content">
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>District Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>District Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>District Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>District Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>District Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Name wise post office -->
+                        <div class="card accordion" id="accordionPanelsStayOpenExample">
+                            <div class="card-header">
+                                <h6 class="title-secondary">India Country District Name Wise Post Office</h6>
+                                <div class="close-icon11 close-icon-css">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div id="close-card11" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionPanelsStayOpenExample">
+                                <div class="card-body" style="padding: 0;">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="card-sidebar d-flex justify-content-center align-items-center"
+                                            style="padding: 0;">
+                                            <ul class="list-group list-group-flush"
+                                                style="margin-right: 12px; box-shadow: rgb(0 0 0 / 10%) 0px 0px 4px 0px; ;padding: 4px;">
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Delhi <i
+                                                        class="fa-solid fa-chevron-right mb-1"></i></li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Mumbai
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Punjab
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Assam <i
+                                                        class="fa-solid fa-chevron-right mb-1"></i></li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">
+                                                    Rajasthan <i class="fa-solid fa-chevron-right mb-1"></i></li>
+                                            </ul>
+                                            <ul class="list-group list-group-flush"
+                                                style="box-shadow: rgb(0 0 0 / 10%) 0px 0px 4px 0px;;padding: 4px;">
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-main-content">
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Post Office Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Post Office Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Post Office Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Post Office Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Post Office Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Name wise location -->
+                        <div class="card accordion" id="accordionPanelsStayOpenExample">
+                            <div class="card-header">
+                                <h6 class="title-secondary">India Country Post Office Name Wise Location</h6>
+                                <div class="close-icon11 close-icon-css">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div id="close-card11" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionPanelsStayOpenExample">
+                                <div class="card-body" style="padding: 0;">
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="card-sidebar d-flex justify-content-center align-items-center"
+                                            style="padding:0;">
+                                            <ul class="list-group list-group-flush"
+                                                style="margin-right: 12px; box-shadow: rgb(0 0 0 / 10%) 0px 0px 4px 0px;padding: 4px;">
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">
+                                                    District <i class="fa-solid fa-chevron-right mb-1"></i></li>
+                                            </ul>
+                                            <ul class="list-group list-group-flush"
+                                                style="box-shadow: rgb(0 0 0 / 10%) 0px 0px 4px 0px;padding: 4px;">
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Post
+                                                    Office
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Post
+                                                    Office
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Post
+                                                    Office
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Post
+                                                    Office
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between">Post
+                                                    Office
+                                                    <i class="fa-solid fa-chevron-right mb-1"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-main-content">
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Location Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Location Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Location Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Location Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Location Name</p>
+                                                <p>721635</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--other location have same pincode-->
+                        <div class="card accordion" id="accordionExample">
+                            <div class="card-header">
+                                <h3 class="title-secondary">Other 9 Locations Have Same Pincode 721635, District East
+                                    Medinipur</h3>
+                                <div class="close-icon3 close-icon-css">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div id="close-card3" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="card-inline-list">
+                                        <ul>
+                                            <li> <a href="http://cadyinfotech.com/pincode/#">Agadoro </a> </li>
+                                            <li> <a href="http://cadyinfotech.com/pincode/#"> Anantapur
+                                                </a> </li>
+                                            <li> <a href="http://cadyinfotech.com/pincode/#"> Bhuniaraychak </a> </li>
+                                            <li> <a href="http://cadyinfotech.com/pincode/#"> Tajnagar </a>
+                                            </li>
+                                            <li> <a href="http://cadyinfotech.com/pincode/#"> Tabakhali </a>
+                                            </li>
+                                            <li> <a href="http://cadyinfotech.com/pincode/#"> Dorojoynagar
+                                                </a> </li>
+                                            <li> <a href="http://cadyinfotech.com/pincode/#">
+                                                    Dorokrishnanagar
+                                                </a> </li>
+                                            <li> <a href="http://cadyinfotech.com/pincode/#">Purbasrikrishnapur</a>
+                                            </li>
+                                            <li> <a href="http://cadyinfotech.com/pincode/#"> Shibramnagar </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--pin code of sutahata-->
+                        <div class="card accordion" id="accordionPanelsStayOpenExample">
+                            <div class="card-header">
+                                <h6 class="title-secondary">What Is The Pincode Of Sutahata</h6>
+                                <div class="close-icon9 close-icon-css">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div id="close-card9" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionPanelsStayOpenExample">
+                                <div class="card-body">
+                                    <div class="card-inline-list card-inline-list-dark">
+                                        <p class="fw-7"> India is a large country and hence, it is next to impossible to
+                                            recall Pincode of any particular locality in a city/town or village or to
+                                            locate a place using its Pincode. </p>
+                                        <p class="fw-7">To help you find a Pincode or area, we present to you a Pincode
+                                            Search Engine. Now, you can easily search for the Pincode of a particular
+                                            area as well as the address of any place in india, simply through its
+                                            Pincode. All of that just one click away.</p>
+                                        <p class="fw-7">With this section, our aim is to cater to the needs of
+                                            individuals as well as organizations who want to search for Pincode or
+                                            addresses of localities across India. Be it a place in the remote mountains
+                                            of Jammu and Kashmir or the deserts of Rajasthan, we have got you covered.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Structure of Suhata Pincode-->
+                        <div class="card accordion" id="accordionPanelsStayOpenExample">
+                            <div class="card-header">
+                                <h6 class="title-secondary">Suhata Pincode Structure Explain</h6>
+                                <div class="close-icon10 close-icon-css">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </div>
+                            </div>
+
+                            <div id="close-card10" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionPanelsStayOpenExample">
+                                <div class="card-body">
+                                    <p class="fw-7">Suhata Pincode is 721635. Suhata is located in the East Medinipur in West Bengal, India. Explain the Suhata pincode Structure.</p>
+                                    <img src="./Home abp_files/suahata-pin-code.png">
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="col-12 card-footer-flex">
+                                    <div class="social-icon">
+                                        <ul>
+                                            <li>
+                                                <a href="http://cadyinfotech.com/pincode/#">
+                                                    <img src="./Home abp_files/whatsapp.png" alt="whatsapp-logo">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://cadyinfotech.com/pincode/#">
+                                                    <img src="./Home abp_files/telegram.png" alt="telegram-logo">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://cadyinfotech.com/pincode/#">
+                                                    <img src="./Home abp_files/gmail.png" alt="gmail-logo">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://cadyinfotech.com/pincode/#">
+                                                    <img src="./Home abp_files/facebook.png" alt="facebook-logo">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://cadyinfotech.com/pincode/#">
+                                                    <img src="./Home abp_files/linkedin.png" alt="linkedin-logo">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="http://cadyinfotech.com/pincode/#">
+                                                    <img src="./Home abp_files/twitter.png" alt="twitter-logo">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="share-icon">
+                                        <button class="btn-copy" title="Copy">
+                                            <i class="fa fa-clone" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="btn-download" title="Download">
+                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
                 <div class="col-12 col-md-3">
-                    <div class="add-box">
-                        <img src="./Home abp_files/add-right.png" class="img-fluid">
+                    <div class="d-flex justify-content-center align-items-center ad-right">
+                        302 X 145
                     </div>
                     <div class="location-box">
                         <h4> Your Current Location Pincode </h4>
@@ -1177,8 +1665,8 @@
                             <p> Hyderabad, Telangana </p>
                         </div>
                     </div>
-                    <div class="add-box">
-                        <img src="./Home abp_files/add-left.png" class="img-fluid">
+                    <div class="d-flex justify-content-center align-items-center ad-right-2">
+                        302 X 626
                     </div>
                     <div class="right-card">
                         <div class="card">
@@ -1189,27 +1677,32 @@
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 11 - Delhi </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 12-13 Haryana </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 14-16 Punjab </li>
-                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 17 - Himachal Pradesh </li>
-                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 18 - 19 Jammu &amp; Kashmir
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 17 - Himachal Pradesh
                                 </li>
-                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 20 - 28 Uttar Pradesh </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 18 - 19 Jammu &amp;
+                                    Kashmir
+                                </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 20 - 28 Uttar Pradesh
+                                </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 30 - 34 Rajasthan </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 36 - 39 Gujarat </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 40 - 44 Maharashtra </li>
-                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 45 - 48 Madhya Pradesh </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 45 - 48 Madhya Pradesh
+                                </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 49 - Chhattisgarh </li>
-                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 50 - 53 Andhra Pradesh </li>
+                                <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 50 - 53 Andhra Pradesh
+                                </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 50 - 53 Telangana </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 56 - 59 Karnataka </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i>7. Hover me</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="add-box">
-                        <img src="./Home abp_files/add-left.png" class="img-fluid">
+                    <div class="d-flex justify-content-center align-items-center ad-right-3">
+                        304 X 626
                     </div>
-                    <div class="add-box">
-                        <img src="./Home abp_files/add-left.png" class="img-fluid">
+                    <div class="d-flex justify-content-center align-items-center ad-right-3">
+                        304 X 626
                     </div>
                 </div>
             </div>
@@ -1397,6 +1890,9 @@
         </div>
     </footer>
 
+    <!-- Google map -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?AIzaSyDC1XWwD1RE8hfrvXFlz2-ekhwaqrLglVM&callback=initMap"></script>
     <!-- Jquery Min JS -->
     <script src="./Home abp_files/jquery.min.js.download"></script>
     <!-- Bootstrap Bundle Min JS -->
@@ -1411,6 +1907,272 @@
     <script src="./Home abp_files/meanmenu.js.download"></script>
     <!-- Custom JS -->
     <script src="./Home abp_files/custom.js.download"></script>
+
+
+    <!-- close popups -->
+
+    <script>
+        window.addEventListener('click', (e) => {
+            // pincode
+            if (e.target != pincodeOptions && e.target != pincodeInput) {
+                pincodeOptions.classList.remove('pincode-show')
+            }
+
+            // country
+            if (e.target != optionsPost && e.target != searchInpPost && e.target != wrapperPost && e.target != wrapperPost.parentElement && e.target != wrapperPost.parentElement.parentElement && e.target != wrapperPost.parentElement.parentElement.parentElement) {
+                wrapperPost.classList.remove("active");
+            }
+        })
+    </script>
+
+
+    <!-- country pincode options -->
+    <script>
+        const countryPincodeSearch = document.querySelector('.country-pincode-search')
+        const countryPincodeOptions = document.querySelector('.country-pincode-options')
+        const countryPincodeItems = document.querySelectorAll('.country-pincode-item')
+        const pincodeSearchText = document.querySelector('.pincode-search-text')
+        const pincodeSearchImg = document.querySelector('.pincode-search-img')
+
+        countryPincodeItems.forEach(item => {
+            item.addEventListener('click', () => {
+                let itemImg = item.childNodes[1].dataset.item
+                let itemText = item.childNodes[3].textContent
+                pincodeSearchImg.src = `./1x1/${itemImg}.svg`
+                pincodeSearchText.textContent = itemText
+            })
+        })
+
+
+        countryPincodeSearch.addEventListener('click', () => countryPincodeOptions.classList.toggle('block-show'))
+    </script>
+
+    <!-- Pincode -->
+    <script>
+        const pincodeInput = document.getElementById('pincode-input')
+        const pincodeSearchBtn = document.getElementById('pincode-btn')
+        const pincodeOptions = document.querySelector('.pincode-options')
+        const pincodeUl = pincodeOptions.querySelector('.pincode-ul')
+
+        const pincodes = [
+            {
+                pincode: '100001',
+                postOfficeName: 'name1',
+                districtName: 'district1',
+                stateName: 'state1'
+            },
+            {
+                pincode: '100002',
+                postOfficeName: 'name2',
+                districtName: 'district2',
+                stateName: 'state2'
+            },
+        ]
+
+        function addPincode() {
+            pincodes.map((pin) => {
+                pincodeUl.innerHTML += `<li class="pincode-item" onclick="updatePincodeInput(this)">${pin.pincode} | ${pin.postOfficeName} | ${pin.districtName} | ${pin.stateName}</li>`
+            })
+        }
+        addPincode()
+
+        function updatePincodeInput(selected) {
+            pincodeOptions.classList.remove('pincode-show')
+            pincodeInput.value = selected.textContent
+        }
+
+        pincodeInput.addEventListener('keyup', () => {
+            let inputValue = pincodeInput.value.toLowerCase()
+            let arr = [];
+            arr = pincodes.filter(data => {
+                return data.pincode.toLowerCase().startsWith(inputValue);
+            }).map(data => {
+                return `<li class="pincode-item" onclick="updatePincodeInput(this)">${data.pincode} | ${data.postOfficeName} | ${data.districtName} | ${data.stateName}</li>`;
+            }).join("");
+
+            pincodeUl.innerHTML = arr ? arr : `<li class="pincode-item">Oops! Country not found</li>`;
+        })
+
+        pincodeInput.addEventListener('click', () => pincodeOptions.classList.toggle('pincode-show'))
+    </script>
+
+
+
+    <!-- select post office -->
+    <script>
+        const wrapperPost = document.querySelector(".wrapper-post"),
+            selectBtnPost = wrapperPost.querySelector(".select-btn-post"),
+            searchInpPost = wrapperPost.querySelector(".input-post"),
+            optionsPost = wrapperPost.querySelector(".options-post");
+        let posts = ['Post1', 'Post2', 'Post3', 'Post4', 'Post6', 'Post7', 'Post8', 'Post9', 'Post10'];
+
+        function addPost(selectedCountry) {
+            optionsPost.innerHTML = "";
+            posts.forEach(post => {
+                let isSelected = post == selectedCountry ? "selected" : "";
+                let li = `<li onclick="updatePost(this)" class="${isSelected}">${post}</li>`;
+                optionsPost.insertAdjacentHTML("beforeend", li);
+            });
+        }
+        addPost();
+        function updatePost(selectedLi) {
+            searchInpPost.value = "";
+            addPost(selectedLi.innerText);
+            wrapperPost.classList.remove("active");
+            selectBtnPost.firstElementChild.innerText = selectedLi.innerText;
+        }
+        searchInpPost.addEventListener("keyup", () => {
+            let arr = [];
+            let searchWord = searchInpPost.value.toLowerCase();
+            arr = countries.filter(data => {
+                return data.toLowerCase().startsWith(searchWord);
+            }).map(data => {
+                let isSelected = data == selectBtnPost.firstElementChild.innerText ? "selected" : "";
+                return `<li onclick="updatePost(this)" class="${isSelected}">${data}</li>`;
+            }).join("");
+            optionsDistrict.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
+        });
+        selectBtnPost.addEventListener("click", () => wrapperPost.classList.toggle("active"));
+    </script>
+
+    <!-- select district -->
+    <script>
+        const wrapperDistrict = document.querySelector(".wrapper-district"),
+            selectBtnDistrict = wrapperDistrict.querySelector(".select-btn-district"),
+            searchInpDistrict = wrapperDistrict.querySelector(".input-district"),
+            optionsDistrict = wrapperDistrict.querySelector(".options-district");
+        let districts = ['Agra', 'Aligarh', 'Allahabad', 'Ambedkar Nagar', 'Amethi', 'Amroha', 'Auraiya', 'Azamgarh', 'Baghpat', 'Bahraich', 'Ballia', 'Balrampur', 'Banda', 'Barabanki', 'Bareilly', 'Basti', 'Bijnor', 'Budaun', 'Bulandshahr', 'Chandauli', 'Chitrakoot', 'Deoria', 'Etah', 'Etawah', 'Faizabad', 'Farrukhabad', 'Fatehpur', 'Firozabad', 'Gautam Buddha Nagar', 'Ghaziabad', 'Ghazipur', 'Gonda', 'Gorakhpur', 'Hamirpur', 'Hapur', 'Hardoi', 'Hathras', 'Jalaun', 'Jaunpur', 'Jhansi', 'Kannauj', 'Kanpur Dehat', 'Kanpur Nagar', 'Kasganj', 'Kaushambi', 'Kheri', 'Kushinagar', 'Lalitpur', 'Lucknow', 'Maharajganj', 'Mahoba', 'Mainpuri', 'Mathura', 'Mau', 'Meerut', 'Mirzapur', 'Moradabad', 'Muzaffarnagar', 'Pilibhit', 'Pratapgarh', 'Raebareli', 'Rampur', 'Saharanpur', 'Sambhal', 'Sant Kabir Nagar', 'Shahjahanpur', 'Shamli', 'Shravasti', 'Siddharthnagar', 'Sitapur', 'Sonbhadra', 'Sultanpur', 'Unnao', 'Varanasi'];
+
+        function addDistrict(selectedCountry) {
+            optionsDistrict.innerHTML = "";
+            districts.forEach(district => {
+                let isSelected = district == selectedCountry ? "selected" : "";
+                let li = `<li onclick="updateDistrictName(this)" class="${isSelected}">${district}</li>`;
+                optionsDistrict.insertAdjacentHTML("beforeend", li);
+            });
+        }
+        addDistrict();
+        function updateDistrictName(selectedLi) {
+            searchInpDistrict.value = "";
+            addDistrict(selectedLi.innerText);
+            wrapperDistrict.classList.remove("active");
+            selectBtnDistrict.firstElementChild.innerText = selectedLi.innerText;
+        }
+        searchInpDistrict.addEventListener("keyup", () => {
+            let arr = [];
+            let searchWord = searchInpDistrict.value.toLowerCase();
+            arr = countries.filter(data => {
+                return data.toLowerCase().startsWith(searchWord);
+            }).map(data => {
+                let isSelected = data == selectBtnDistrict.firstElementChild.innerText ? "selected" : "";
+                return `<li onclick="updateDistrictName(this)" class="${isSelected}">${data}</li>`;
+            }).join("");
+            optionsDistrict.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
+        });
+        selectBtnDistrict.addEventListener("click", () => wrapperDistrict.classList.toggle("active"));
+    </script>
+
+    <!-- select state -->
+    <script>
+        const wrapperState = document.querySelector(".wrapper-state"),
+            selectBtnState = wrapperState.querySelector(".select-btn-state"),
+            searchInpState = wrapperState.querySelector(".input-state"),
+            optionsState = wrapperState.querySelector(".options-state");
+        let states = ['Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Ladakh', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal'];
+        function addState(selectedCountry) {
+            optionsState.innerHTML = "";
+            states.forEach(state => {
+                let isSelected = state == selectedCountry ? "selected" : "";
+                let li = `<li onclick="updateStateName(this)" class="${isSelected}">${state}</li>`;
+                optionsState.insertAdjacentHTML("beforeend", li);
+            });
+        }
+        addState();
+        function updateStateName(selectedLi) {
+            searchInpState.value = "";
+            addState(selectedLi.innerText);
+            wrapperState.classList.remove("active");
+            selectBtnState.firstElementChild.innerText = selectedLi.innerText;
+        }
+        searchInpState.addEventListener("keyup", () => {
+            let arr = [];
+            let searchWord = searchInpState.value.toLowerCase();
+            arr = countries.filter(data => {
+                return data.toLowerCase().startsWith(searchWord);
+            }).map(data => {
+                let isSelected = data == selectBtnState.firstElementChild.innerText ? "selected" : "";
+                return `<li onclick="updateStateName(this)" class="${isSelected}">${data}</li>`;
+            }).join("");
+            optionsState.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
+        });
+        selectBtnState.addEventListener("click", () => wrapperState.classList.toggle("active"));
+    </script>
+
+    <!-- select countries -->
+    <script>
+        const wrapperCountries = document.querySelector(".wrapper-countries"),
+            selectBtnCountries = wrapperCountries.querySelector(".select-btn-countries"),
+            searchInpCountries = wrapperCountries.querySelector(".input-countries"),
+            optionsCountries = wrapperCountries.querySelector(".options-countries");
+        let countries = ["Afghanistan", "Algeria", "Argentina", "Australia", "Bangladesh", "Belgium", "Bhutan",
+            "Brazil", "Canada", "China", "Denmark", "Ethiopia", "Finland", "France", "Germany",
+            "Hungary", "Iceland", "India", "Indonesia", "Iran", "Italy", "Japan", "Malaysia",
+            "Maldives", "Mexico", "Morocco", "Nepal", "Netherlands", "Nigeria", "Norway", "Pakistan",
+            "Peru", "Russia", "Romania", "South Africa", "Spain", "Sri Lanka", "Sweden", "Switzerland",
+            "Thailand", "Turkey", "Uganda", "Ukraine", "United States", "United Kingdom", "Vietnam"];
+        function addCountry(selectedCountry) {
+            optionsCountries.innerHTML = "";
+            countries.forEach(country => {
+                let isSelected = country == selectedCountry ? "selected" : "";
+                let li = `<li onclick="updateCountryName(this)" class="${isSelected}">${country}</li>`;
+                optionsCountries.insertAdjacentHTML("beforeend", li);
+            });
+        }
+        addCountry();
+        function updateCountryName(selectedLi) {
+            searchInpCountries.value = "";
+            addCountry(selectedLi.innerText);
+            wrapperCountries.classList.remove("active");
+            selectBtnCountries.firstElementChild.innerText = selectedLi.innerText;
+        }
+        searchInpCountries.addEventListener("keyup", () => {
+            let arr = [];
+            let searchWord = searchInpCountries.value.toLowerCase();
+            arr = countries.filter(data => {
+                return data.toLowerCase().startsWith(searchWord);
+            }).map(data => {
+                let isSelected = data == selectBtnCountries.firstElementChild.innerText ? "selected" : "";
+                return `<li onclick="updateCountryName(this)" class="${isSelected}">${data}</li>`;
+            }).join("");
+            optionsCountries.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
+        });
+        selectBtnCountries.addEventListener("click", () => wrapperCountries.classList.toggle("active"));
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#country-select").msDropdown();
+        })
+    </script>
+
+    <script>
+        var selectLanguageText = document.getElementById('select-language-text')
+        var languageItems = document.querySelectorAll('.language-item')
+        var selectLanguageContent = document.querySelector('.select-language-content')
+
+        selectLanguageText.addEventListener('click', () => {
+            selectLanguageContent.classList.toggle('show')
+        })
+
+        languageItems.forEach(item => {
+            item.addEventListener('click', () => {
+                selectLanguageText.innerText = item.textContent
+                selectLanguageContent.classList.toggle('show')
+            })
+        })
+    </script>
+
 
 
     <script type="text/javascript">

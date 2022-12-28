@@ -277,7 +277,7 @@
 
                         </ul>
                         <div class="col-md-2">
-                            <div class="selectpicker d-flex justify-content-end align-items-center">
+                            <div class="selectpicker d-flex justify-content-end align-items-center select-language-container">
                                 <div class="select-language d-flex justify-content-end align-items-center">
                                     <i class="fa fa-globe mb-1" aria-hidden="true"></i>
                                     <p class="mb-0 mx-1" id="select-language-text">Select Language</p>
@@ -330,12 +330,12 @@
 
                         <div class="search-area">
                             <div class="row">
-                                <div class="col-6 col-md-3 mob-mb" style="padding-right:0;">
+                                <div class="col-6 col-md-3 mob-mb select-country" style="padding-right:0;">
                                     <div class="form-control-select group-select custom-focus" style="padding: 0;">
 
                                         <div class="search-btn-group">
                                             <div class="wrapper wrapper-countries">
-                                                <div class="select-btn select-btn-countries">
+                                                <div class="select-btn select-btn-countries d-flex">
                                                     <span>Select Country</span>
                                                 </div>
                                                 <div class="content content-countries">
@@ -347,7 +347,7 @@
                                                     <ul class="options options-countries"></ul>
                                                 </div>
                                             </div>
-                                            <div id="down-arrow-state" class="svg-left">
+                                            <div id="down-arrow-state" class="svg-left down-arrow-countries">
                                                 <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 512 512">
                                                     <path
@@ -355,12 +355,13 @@
                                                     </path>
                                                 </svg>
                                             </div>
+                                            <i class="fa-solid fa-xmark cross-mark cross-arrow-countries"></i>
                                         </div>
 
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-md-3 mob-mb" style="padding-right:0;">
+                                <div class="col-6 col-md-3 mob-mb select-state" style="padding-right:0;">
                                     <div class="form-control-select group-select custom-focus" style="padding: 0;">
 
                                         <div class="search-btn-group">
@@ -377,7 +378,7 @@
                                                     <ul class="options options-state"></ul>
                                                 </div>
                                             </div>
-                                            <div id="down-arrow-state" class="svg-left">
+                                            <div id="down-arrow-state" class="svg-left down-arrow-state">
                                                 <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 512 512">
                                                     <path
@@ -385,12 +386,13 @@
                                                     </path>
                                                 </svg>
                                             </div>
+                                            <i class="fa-solid fa-xmark cross-mark cross-arrow-state"></i>
                                         </div>
 
                                     </div>
                                 </div>
 
-                                <div class="col-6 col-md-3 mob-mb" style="padding-right:0;">
+                                <div class="col-6 col-md-3 mob-mb select-district" style="padding-right:0;">
                                     <div class="form-control-select group-select custom-focus" style="padding: 0;">
 
                                         <div class="search-btn-group">
@@ -407,7 +409,7 @@
                                                     <ul class="options options-district"></ul>
                                                 </div>
                                             </div>
-                                            <div id="down-arrow-district" class="svg-left">
+                                            <div id="down-arrow-district" class="svg-left down-arrow-district">
                                                 <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 512 512">
                                                     <path
@@ -415,11 +417,12 @@
                                                     </path>
                                                 </svg>
                                             </div>
+                                            <i class="fa-solid fa-xmark cross-mark cross-arrow-district"></i>
                                         </div>
 
                                     </div>
                                 </div>
-                                <div class="col-6 col-md-3 mob-mb mob-pr">
+                                <div class="col-6 col-md-3 mob-mb mob-pr select-post">
                                     <div class="form-control-select group-select custom-focus" style="padding: 0;">
 
                                         <div class="search-btn-group">
@@ -436,7 +439,7 @@
                                                     <ul class="options options-post"></ul>
                                                 </div>
                                             </div>
-                                            <div id="down-arrow-post" class="svg-left">
+                                            <div id="down-arrow-post" class="svg-left down-arrow-post">
                                                 <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
                                                     viewBox="0 0 512 512">
                                                     <path
@@ -444,6 +447,7 @@
                                                     </path>
                                                 </svg>
                                             </div>
+                                            <i class="fa-solid fa-xmark cross-mark cross-arrow-post"></i>
                                         </div>
 
                                     </div>
@@ -462,14 +466,6 @@
                                             class="country-pincode-search d-flex justify-content-start align-items-center">
                                             <img src="./1x1/in.svg" alt="google" class="pincode-search-img">
                                             <p class="mb-0 mt-1 me-3 pincode-search-text">IN</p>
-                                            <div id="down-arrow-state" style="cursor: pointer;">
-                                                <svg style="height: 12px;" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 512 512">
-                                                    <path
-                                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
-                                                    </path>
-                                                </svg>
-                                            </div>
                                             <div class="country-pincode-options">
                                                 <ul class="country-pincode-options-ul">
                                                     <li class="country-pincode-item">
@@ -680,9 +676,10 @@
                             <div id="close-card1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="card-body">
-                                    <iframe src="./Home abp_files/embed.html" width="100%" height="250" frameborder="0"
-                                        style="border:0" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe height="450" style="border:0; width: 100%;" loading="lazy" allowfullscreen
+                                        referrerpolicy="no-referrer-when-downgrade"
+                                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDC1XWwD1RE8hfrvXFlz2-ekhwaqrLglVM&q=Space+Needle,Seattle+WA">
+                                    </iframe>
                                 </div>
                                 <div class="card-footer">
                                     <div class="col-12 card-footer-flex">
@@ -722,10 +719,10 @@
                                         </div>
                                         <div class="share-icon">
                                             <button class="btn-copy" title="Copy">
-                                                <i class="fa fa-clone" aria-hidden="true"></i>
+                                                <i class="fa fa-clone me-1" aria-hidden="true"></i> COPY LINK
                                             </button>
                                             <button class="btn-download" title="Download">
-                                                <i class="fa fa-download" aria-hidden="true"></i>
+                                                <i class="fa fa-download me-1" aria-hidden="true"></i> DOWNLOAD
                                             </button>
                                         </div>
                                     </div>
@@ -774,7 +771,9 @@
                             </div>
                         </div>
                         <div class="add-box">
-                            <img src="./Home abp_files/add-top.png" class="img-fluid">
+                            <div class="d-flex justify-content-center align-items-center ad-top">
+                                746 X 127
+                            </div>
                         </div>
 
 
@@ -1270,7 +1269,7 @@
                                             <p class="fw-7">Here's an example of decoding your pin code. The pin code of
                                                 Central Delhi is 110001.</p>
                                             <div class="slider-btn">
-                                                <button class="btn-search">Readmore</button>
+                                                <button class="btn-search" style="padding: 6px;">Readmore</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1294,46 +1293,54 @@
 
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="card-sidebar">
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">Delhi <i
-                                                        class="fa-solid fa-chevron-right mb-1"></i></li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">Mumbai
+                                            <ul class="list-group list-group-flush name-wise-district">
+                                                <li
+                                                    class="list-group-item fw-7 d-flex justify-content-between name-wise-district-item">
+                                                    Delhi <i class="fa-solid fa-chevron-right mb-1"></i></li>
+                                                <li
+                                                    class="list-group-item fw-7 d-flex justify-content-between name-wise-district-item">
+                                                    Mumbai
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">Punjab
+                                                <li
+                                                    class="list-group-item fw-7 d-flex justify-content-between name-wise-district-item">
+                                                    Punjab
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">Assam <i
-                                                        class="fa-solid fa-chevron-right mb-1"></i></li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">
+                                                <li
+                                                    class="list-group-item fw-7 d-flex justify-content-between name-wise-district-item">
+                                                    Assam <i class="fa-solid fa-chevron-right mb-1"></i></li>
+                                                <li
+                                                    class="list-group-item fw-7 d-flex justify-content-between name-wise-district-item">
                                                     Rajasthan <i class="fa-solid fa-chevron-right mb-1"></i></li>
                                             </ul>
                                         </div>
-                                        <div class="card-main-content">
+                                        <div class="card-main-content name-wise-district-options">
                                             <div
                                                 class="card-content-block d-flex justify-content-between align-items-center">
-                                                <p>District Name</p>
+                                                <p>Delhi District</p>
                                                 <p>721635</p>
                                             </div>
                                             <div
                                                 class="card-content-block d-flex justify-content-between align-items-center">
-                                                <p>District Name</p>
-                                                <p>721635</p>
+                                                <p>Delhi District</p>
+                                                <p>721636</p>
+                                            </div>
+
+                                            <div
+                                                class="card-content-block d-flex justify-content-between align-items-center">
+                                                <p>Delhi District</p>
+                                                <p>721637</p>
                                             </div>
                                             <div
                                                 class="card-content-block d-flex justify-content-between align-items-center">
-                                                <p>District Name</p>
-                                                <p>721635</p>
+                                                <p>Delhi District</p>
+                                                <p>721638</p>
                                             </div>
                                             <div
                                                 class="card-content-block d-flex justify-content-between align-items-center">
-                                                <p>District Name</p>
-                                                <p>721635</p>
-                                            </div>
-                                            <div
-                                                class="card-content-block d-flex justify-content-between align-items-center">
-                                                <p>District Name</p>
-                                                <p>721635</p>
+                                                <p>Delhi District</p>
+                                                <p>721639</p>
                                             </div>
                                         </div>
                                     </div>
@@ -1359,22 +1366,22 @@
                                         <div class="card-sidebar d-flex justify-content-center align-items-center"
                                             style="padding: 0;">
                                             <ul class="list-group list-group-flush"
-                                                style="margin-right: 12px; box-shadow: rgb(0 0 0 / 10%) 0px 0px 4px 0px; ;padding: 4px;">
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">Delhi <i
+                                                style="margin-right: 12px; box-shadow: rgb(0 0 0 / 6%) 2px 0px 2px 0px; ;padding: 4px;">
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-post-item">Delhi <i
                                                         class="fa-solid fa-chevron-right mb-1"></i></li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">Mumbai
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-post-item">Mumbai
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">Punjab
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-post-item">Punjab
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">Assam <i
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-post-item">Assam <i
                                                         class="fa-solid fa-chevron-right mb-1"></i></li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-post-item">
                                                     Rajasthan <i class="fa-solid fa-chevron-right mb-1"></i></li>
                                             </ul>
-                                            <ul class="list-group list-group-flush"
-                                                style="box-shadow: rgb(0 0 0 / 10%) 0px 0px 4px 0px;;padding: 4px;">
+                                            <ul class="list-group list-group-flush name-wise-post-district"
+                                                style="box-shadow: rgb(0 0 0 / 0%) 2px 0px 2px 0px;;padding: 4px;">
                                                 <li class="list-group-item fw-7 d-flex justify-content-between">District
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
@@ -1392,7 +1399,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="card-main-content">
+                                        <div class="card-main-content name-wise-post-options">
                                             <div
                                                 class="card-content-block d-flex justify-content-between align-items-center">
                                                 <p>Post Office Name</p>
@@ -1443,24 +1450,24 @@
                                         <div class="card-sidebar d-flex justify-content-center align-items-center"
                                             style="padding:0;">
                                             <ul class="list-group list-group-flush"
-                                                style="margin-right: 12px; box-shadow: rgb(0 0 0 / 10%) 0px 0px 4px 0px;padding: 4px;">
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                style="margin-right: 12px; box-shadow: rgb(0 0 0 / 6%) 2px 0px 2px 0px;padding: 4px;">
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-location-item">District 1
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-location-item">District 2
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-location-item">District 3
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">District
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-location-item">District 4
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
-                                                <li class="list-group-item fw-7 d-flex justify-content-between">
-                                                    District <i class="fa-solid fa-chevron-right mb-1"></i></li>
+                                                <li class="list-group-item fw-7 d-flex justify-content-between name-wise-location-item">
+                                                    District 5 <i class="fa-solid fa-chevron-right mb-1"></i></li>
                                             </ul>
-                                            <ul class="list-group list-group-flush"
-                                                style="box-shadow: rgb(0 0 0 / 10%) 0px 0px 4px 0px;padding: 4px;">
+                                            <ul class="list-group list-group-flush name-wise-location-post"
+                                                style="box-shadow: rgb(0 0 0 / 0%) 2px 0px 2px 0px;padding: 4px;">
                                                 <li class="list-group-item fw-7 d-flex justify-content-between">Post
                                                     Office
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
@@ -1483,7 +1490,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="card-main-content">
+                                        <div class="card-main-content name-wise-location-options">
                                             <div
                                                 class="card-content-block d-flex justify-content-between align-items-center">
                                                 <p>Location Name</p>
@@ -1585,70 +1592,451 @@
                         </div>
 
                         <!--Structure of Suhata Pincode-->
+
                         <div class="card accordion" id="accordionPanelsStayOpenExample">
-                            <div class="card-header">
-                                <h6 class="title-secondary">Suhata Pincode Structure Explain</h6>
-                                <div class="close-icon10 close-icon-css">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </div>
+                            <div class="card-header spl-btm-border">
+                                <h2 class="title-secondary">Sutahata Pin Code Structure Explain</h2>
                             </div>
-
-                            <div id="close-card10" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            <div id="close-card9" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
-                                <div class="card-body">
-                                    <p class="fw-7">Suhata Pincode is 721635. Suhata is located in the East Medinipur in West Bengal, India. Explain the Suhata pincode Structure.</p>
-                                    <img src="./Home abp_files/suahata-pin-code.png">
-                                </div>
-                            </div>
+                                <div class="card-body pb-0">
+                                    <div class="card-inline-list card-inline-list-dark">
+                                        <p class="mb-0"><i>Sutahata Post Office is located at East Midnapore, West
+                                                Bengal and Sutahata Pin Code is 721635. NA Post Office is a Sub Post
+                                                Office, Which comes under the Head Post Office Tamluk H.O.</i></p>
 
-                            <div class="card-footer">
-                                <div class="col-12 card-footer-flex">
-                                    <div class="social-icon">
-                                        <ul>
-                                            <li>
-                                                <a href="http://cadyinfotech.com/pincode/#">
-                                                    <img src="./Home abp_files/whatsapp.png" alt="whatsapp-logo">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="http://cadyinfotech.com/pincode/#">
-                                                    <img src="./Home abp_files/telegram.png" alt="telegram-logo">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="http://cadyinfotech.com/pincode/#">
-                                                    <img src="./Home abp_files/gmail.png" alt="gmail-logo">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="http://cadyinfotech.com/pincode/#">
-                                                    <img src="./Home abp_files/facebook.png" alt="facebook-logo">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="http://cadyinfotech.com/pincode/#">
-                                                    <img src="./Home abp_files/linkedin.png" alt="linkedin-logo">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="http://cadyinfotech.com/pincode/#">
-                                                    <img src="./Home abp_files/twitter.png" alt="twitter-logo">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="share-icon">
-                                        <button class="btn-copy" title="Copy">
-                                            <i class="fa fa-clone" aria-hidden="true"></i>
-                                        </button>
-                                        <button class="btn-download" title="Download">
-                                            <i class="fa fa-download" aria-hidden="true"></i>
-                                        </button>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 200 99.5"
+                                            style="enable-background:new 0 0 200 99.5; font-weight: 600;"
+                                            xml:space="preserve">
+                                            <style type="text/css">
+                                                .st0 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                }
+
+                                                .st1 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                    stroke-dasharray: 1.8673, 1.8673;
+                                                }
+
+                                                .st2 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                    stroke-dasharray: 1.833, 1.833;
+                                                }
+
+                                                .st3 {
+                                                    fill: #FFD1D1;
+                                                }
+
+                                                .st4 {
+                                                    fill: #FF0000;
+                                                }
+
+                                                .st6 {
+                                                    font-size: 5.6481px;
+                                                }
+
+                                                .st7 {
+                                                    font-size: 5px;
+                                                }
+
+                                                .st8 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                    stroke-dasharray: 1.9445, 1.9445;
+                                                }
+
+                                                .st9 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                    stroke-dasharray: 2.2904, 2.2904;
+                                                }
+
+                                                .st10 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                    stroke-dasharray: 1.9773, 1.9773;
+                                                }
+
+                                                .st11 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                    stroke-dasharray: 2.0573, 2.0573;
+                                                }
+
+                                                .st12 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                    stroke-dasharray: 2.2178, 2.2178;
+                                                }
+
+                                                .st13 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                    stroke-dasharray: 1.9657, 1.9657;
+                                                }
+
+                                                .st14 {
+                                                    fill: none;
+                                                    stroke: #FF0000;
+                                                    stroke-width: 0.5;
+                                                    stroke-miterlimit: 10;
+                                                    stroke-dasharray: 1.8076, 1.8076;
+                                                }
+
+                                                .st15 {
+                                                    fill: #FFFFFF;
+                                                }
+
+                                                .st17 {
+                                                    font-size: 12px;
+                                                }
+                                            </style>
+                                            <g id="Layer_2">
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <line class="st0" x1="53.5" y1="11.1" x2="54.5" y2="11.1">
+                                                            </line>
+                                                            <line class="st1" x1="56.4" y1="11.1" x2="66.7" y2="11.1">
+                                                            </line>
+                                                            <polyline class="st0"
+                                                                points="67.6,11.1 68.6,11.1 68.6,12.1"></polyline>
+                                                            <line class="st2" x1="68.6" y1="13.9" x2="68.6" y2="27.7">
+                                                            </line>
+                                                            <line class="st0" x1="68.6" y1="28.6" x2="68.6" y2="29.6">
+                                                            </line>
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="4.8" y="5.7" class="st3" width="53.5" height="10.9">
+                                                        </rect>
+                                                        <g>
+                                                            <text transform="matrix(1 0 0 1 8.3844 12.7354)"
+                                                                class="st4 st5 st6">State Sub Region</text>
+                                                        </g>
+                                                    </g>
+                                                    <text transform="matrix(1 0 0 1 28.5529 22.0027)"
+                                                        class="st5 st7">Telangana</text>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <line class="st0" x1="33.6" y1="66" x2="34.6" y2="66">
+                                                            </line>
+                                                            <line class="st8" x1="36.5" y1="66" x2="47.2" y2="66">
+                                                            </line>
+                                                            <polyline class="st0" points="48.2,66 49.2,66 49.2,65 ">
+                                                            </polyline>
+                                                            <line class="st9" x1="49.2" y1="62.7" x2="49.2" y2="54.7">
+                                                            </line>
+                                                            <line class="st0" x1="49.2" y1="53.5" x2="49.2" y2="52.5">
+                                                            </line>
+                                                        </g>
+                                                    </g>
+                                                    <text transform="matrix(1 0 0 1 16.8687 76.3896)"
+                                                        class="st5 st7">South</text>
+                                                    <g>
+                                                        <rect x="10.3" y="60.5" class="st3" width="25.5" height="10.9">
+                                                        </rect>
+                                                        <g>
+                                                            <text transform="matrix(1 0 0 1 13.6583 67.9583)"
+                                                                class="st4 st5 st6">Region</text>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <g>
+                                                                <line class="st0" x1="140" y1="79" x2="139" y2="79">
+                                                                </line>
+                                                                <line class="st10" x1="137" y1="79" x2="130.1" y2="79">
+                                                                </line>
+                                                                <polyline class="st0"
+                                                                    points="129.1,79 128.1,79 128.1,78"></polyline>
+                                                                <line class="st11" x1="128.1" y1="75.9" x2="128.1"
+                                                                    y2="68.7"></line>
+                                                                <line class="st0" x1="128.1" y1="67.7" x2="128.1"
+                                                                    y2="66.7"></line>
+                                                            </g>
+                                                        </g>
+                                                        <g>
+                                                            <g>
+                                                                <line class="st0" x1="148.4" y1="52.5" x2="148.4"
+                                                                    y2="53.5"></line>
+                                                                <polyline class="st12"
+                                                                    points="148.4,55.7 148.4,59.1 148.4,63.5">
+                                                                </polyline>
+                                                                <polyline class="st0"
+                                                                    points="148.4,64.6 148.4,65.6 147.4,65.6">
+                                                                </polyline>
+                                                                <polyline class="st13"
+                                                                    points="145.4,65.6 128.7,65.6 111,65.6"></polyline>
+                                                                <polyline class="st0"
+                                                                    points="110,65.6 109,65.6 109,64.6 "></polyline>
+                                                                <polyline class="st12"
+                                                                    points="109,62.4 109,59.1 109,54.6"></polyline>
+                                                                <line class="st0" x1="109" y1="53.5" x2="109" y2="52.5">
+                                                                </line>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                    <text transform="matrix(1 0 0 1 144.3034 89.8036)"
+                                                        class="st5 st7">Ameerpet</text>
+                                                    <rect x="140" y="73.5" class="st3" width="56.5" height="10.9">
+                                                    </rect>
+                                                    <g>
+                                                        <text transform="matrix(1 0 0 1 143.588 80.627)"
+                                                            class="st4 st5 st6">Post Ofce Number</text>
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <g>
+                                                        <g>
+                                                            <line class="st0" x1="104.1" y1="11.1" x2="103.1" y2="11.1">
+                                                            </line>
+                                                            <line class="st14" x1="101.3" y1="11.1" x2="91.3" y2="11.1">
+                                                            </line>
+                                                            <polyline class="st0"
+                                                                points="90.4,11.1 89.4,11.1 89.4,12.1"></polyline>
+                                                            <line class="st2" x1="89.4" y1="13.9" x2="89.4" y2="27.7">
+                                                            </line>
+                                                            <line class="st0" x1="89.4" y1="28.6" x2="89.4" y2="29.6">
+                                                            </line>
+                                                        </g>
+                                                    </g>
+                                                    <text transform="matrix(1 0 0 1 109.5829 22.0027)"
+                                                        class="st5 st7">Hyderabad</text>
+                                                    <g>
+                                                        <rect x="104.1" y="5.7" class="st3" width="76.5" height="10.9">
+                                                        </rect>
+                                                        <g>
+                                                            <text transform="matrix(1 0 0 1 107.909 12.7352)"
+                                                                class="st4 st5 st6">Sorting / Revenue District</text>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                                <g>
+                                                    <rect x="38.4" y="29.6" class="st3" width="121.2" height="22.9">
+                                                    </rect>
+                                                    <g>
+                                                        <rect x="42.3" y="33" class="st4" width="14.4" height="16.1">
+                                                        </rect>
+                                                        <text transform="matrix(1 0 0 1 46.2611 45.2525)"
+                                                            class="st15 st16 st17">5</text>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="62.1" y="33" class="st4" width="14.4" height="16.1">
+                                                        </rect>
+                                                        <text transform="matrix(1 0 0 1 66.0344 45.2525)"
+                                                            class="st15 st16 st17">0</text>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="81.9" y="33" class="st4" width="14.4" height="16.1">
+                                                        </rect>
+                                                        <g>
+                                                            <text transform="matrix(1 0 0 1 85.8076 45.2525)"
+                                                                class="st15 st16 st17">0</text>
+                                                        </g>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="101.6" y="33" class="st4" width="14.4" height="16.1">
+                                                        </rect>
+                                                        <text transform="matrix(1 0 0 1 105.5809 45.2525)"
+                                                            class="st15 st16 st17">0</text>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="121.4" y="33" class="st4" width="14.4" height="16.1">
+                                                        </rect>
+                                                        <text transform="matrix(1 0 0 1 125.3541 45.2525)"
+                                                            class="st15 st16 st17">1</text>
+                                                    </g>
+                                                    <g>
+                                                        <rect x="141.2" y="33" class="st4" width="14.4" height="16.1">
+                                                        </rect>
+                                                        <text transform="matrix(1 0 0 1 145.1274 45.2525)"
+                                                            class="st15 st16 st17">6</text>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+
                                     </div>
                                 </div>
+                                <div class="card-footer">
+                                    <div class="col-12 card-footer-flex">
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/whatsapp.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/telegram.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/gmail.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/facebook.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/linkedin.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/twitter.png">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="share-icon">
+                                            <button class="btn-copy" title="Copy">
+                                                <i class="fa fa-clone me-1" aria-hidden="true"></i> COPY LINK
+                                            </button>
+                                            <button class="btn-download" title="Download">
+                                                <i class="fa fa-download me-1" aria-hidden="true"></i> DOWNLOAD
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
 
+                        <!-- envelope -->
+                        <div class="card accordion" id="accordionPanelsStayOpenExample">
+                            <div class="card-header spl-btm-border">
+                                <h2 class="title-secondary">Sutahata Postcard Envelop Design</h2>
+                            </div>
+                            <div id="close-card9" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionPanelsStayOpenExample">
+                                <div class="card-body pa-0" style="padding: 0;">
+                                    <div class="card-inline-list card-inline-list-dark">
+                                        <div class="postcard-container">
+                                            <div class="left-side">
+                                                <img title="" alt="" src="./Home abp_files/postcard_logo.png"
+                                                    class="logo">
+                                            </div>
+                                            <div class="right-side">
+                                                <div class="top-section">
+                                                    <span>Sutahata Post Office</span>
+                                                    <img title="" alt="" src="./Home abp_files/stamp.png"
+                                                        class="stamp-section">
+                                                </div>
+                                                <div class="bottom-section">
+                                                    <ul>
+                                                        <li>From,</li>
+                                                        <li>
+                                                            <input type="text" name="from_add_line1"
+                                                                class="postcard-form address" placeholder=" ">
+                                                        </li>
+                                                        <li>
+                                                            <input type="text" name="from_add_line2"
+                                                                class="postcard-form address" placeholder=" ">
+                                                        </li>
+                                                        <li>Sutahata Post Office</li>
+                                                        <li>Pincode - 721635</li>
+                                                        <li>Disctrict - Purba Medinipur</li>
+                                                        <li>State - West Bengal</li>
+                                                        <li>India</li>
+                                                        <li>
+                                                            <input type="email" name="email" class="postcard-form email"
+                                                                placeholder="Enter Your Email Here">
+                                                        </li>
+                                                        <li>
+                                                            <input type="text" name="phone" class="postcard-form phone"
+                                                                placeholder="Enter Your Phone Number Here">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="col-12 card-footer-flex">
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/whatsapp.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/telegram.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/gmail.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/facebook.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/linkedin.png">
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a aria-label="" href="http://cadyinfotech.com/pincode/#">
+                                                        <img title="" alt="" src="./Home abp_files/twitter.png">
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="share-icon">
+                                            <button class="btn-copy" title="Copy">
+                                                <i class="fa fa-clone me-1" aria-hidden="true"></i> COPY LINK
+                                            </button>
+                                            <button class="btn-download" title="Download">
+                                                <i class="fa fa-download me-1" aria-hidden="true"></i> DOWNLOAD
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
 
                     </div>
 
@@ -1907,6 +2295,8 @@
     <script src="./Home abp_files/meanmenu.js.download"></script>
     <!-- Custom JS -->
     <script src="./Home abp_files/custom.js.download"></script>
+    <!-- Accordion js -->
+    <script src="./Home abp_files/accordion.js"></script>
 
 
     <!-- close popups -->
@@ -1919,8 +2309,38 @@
             }
 
             // country
-            if (e.target != optionsPost && e.target != searchInpPost && e.target != wrapperPost && e.target != wrapperPost.parentElement && e.target != wrapperPost.parentElement.parentElement && e.target != wrapperPost.parentElement.parentElement.parentElement) {
-                wrapperPost.classList.remove("active");
+            const selectCountry = document.querySelector('.select-country')
+            if (!selectCountry.contains(e.target)) {
+                contentCountries.classList.remove("show");
+            }
+
+            // state
+            const selectState = document.querySelector('.select-state')
+            if(!selectState.contains(e.target)){
+                contentState.classList.remove('show')
+            }
+
+            // district 
+            const selectDistrict = document.querySelector('.select-district')
+            if(!selectDistrict.contains(e.target)){
+                contentDistrict.classList.remove('show')
+            }
+
+            // post
+            const selectPost = document.querySelector('.select-post')
+            if(!selectPost.contains(e.target)){
+                contentPost.classList.remove('show')
+            }
+
+            // country pincode search
+            if(!countryPincodeSearch.contains(e.target)){
+                countryPincodeOptions.classList.remove('block-show')
+            }
+
+            // select language 
+            const selectLanguageContainer = document.querySelector('.select-language-container')
+            if(!selectLanguageContainer.contains(e.target)){
+                selectLanguageContent.classList.remove('show')
             }
         })
     </script>
@@ -1967,6 +2387,12 @@
                 districtName: 'district2',
                 stateName: 'state2'
             },
+            {
+                pincode: '100003',
+                postOfficeName: 'name3',
+                districtName: 'district3',
+                stateName: 'state3'
+            },
         ]
 
         function addPincode() {
@@ -2003,14 +2429,17 @@
         const wrapperPost = document.querySelector(".wrapper-post"),
             selectBtnPost = wrapperPost.querySelector(".select-btn-post"),
             searchInpPost = wrapperPost.querySelector(".input-post"),
-            optionsPost = wrapperPost.querySelector(".options-post");
+            optionsPost = wrapperPost.querySelector(".options-post"),
+            downArrowPost = document.querySelector('.down-arrow-post'),
+            crossArrowPost = document.querySelector('.cross-arrow-post'),
+            contentPost = document.querySelector('.content-post')
+
         let posts = ['Post1', 'Post2', 'Post3', 'Post4', 'Post6', 'Post7', 'Post8', 'Post9', 'Post10'];
 
         function addPost(selectedCountry) {
             optionsPost.innerHTML = "";
             posts.forEach(post => {
-                let isSelected = post == selectedCountry ? "selected" : "";
-                let li = `<li onclick="updatePost(this)" class="${isSelected}">${post}</li>`;
+                let li = `<li onclick="updatePost(this)">${post}</li>`;
                 optionsPost.insertAdjacentHTML("beforeend", li);
             });
         }
@@ -2020,6 +2449,8 @@
             addPost(selectedLi.innerText);
             wrapperPost.classList.remove("active");
             selectBtnPost.firstElementChild.innerText = selectedLi.innerText;
+            downArrowPost.style.display = 'none'
+            crossArrowPost.style.display = 'block'
         }
         searchInpPost.addEventListener("keyup", () => {
             let arr = [];
@@ -2027,12 +2458,17 @@
             arr = countries.filter(data => {
                 return data.toLowerCase().startsWith(searchWord);
             }).map(data => {
-                let isSelected = data == selectBtnPost.firstElementChild.innerText ? "selected" : "";
-                return `<li onclick="updatePost(this)" class="${isSelected}">${data}</li>`;
+                return `<li onclick="updatePost(this)">${data}</li>`;
             }).join("");
             optionsDistrict.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
         });
-        selectBtnPost.addEventListener("click", () => wrapperPost.classList.toggle("active"));
+
+        crossArrowPost.addEventListener('click', () => {
+            selectBtnPost.firstElementChild.innerText = 'Select Post'
+            downArrowPost.style.display = 'block'
+            crossArrowPost.style.display = 'none'
+        })
+        selectBtnPost.addEventListener("click", () => contentPost.classList.toggle("show"));
     </script>
 
     <!-- select district -->
@@ -2040,14 +2476,17 @@
         const wrapperDistrict = document.querySelector(".wrapper-district"),
             selectBtnDistrict = wrapperDistrict.querySelector(".select-btn-district"),
             searchInpDistrict = wrapperDistrict.querySelector(".input-district"),
-            optionsDistrict = wrapperDistrict.querySelector(".options-district");
+            optionsDistrict = wrapperDistrict.querySelector(".options-district"),
+            downArrowDistrict = document.querySelector('.down-arrow-district'),
+            crossArrowDistrict = document.querySelector('.cross-arrow-district'),
+            contentDistrict = document.querySelector('.content-district')
+
         let districts = ['Agra', 'Aligarh', 'Allahabad', 'Ambedkar Nagar', 'Amethi', 'Amroha', 'Auraiya', 'Azamgarh', 'Baghpat', 'Bahraich', 'Ballia', 'Balrampur', 'Banda', 'Barabanki', 'Bareilly', 'Basti', 'Bijnor', 'Budaun', 'Bulandshahr', 'Chandauli', 'Chitrakoot', 'Deoria', 'Etah', 'Etawah', 'Faizabad', 'Farrukhabad', 'Fatehpur', 'Firozabad', 'Gautam Buddha Nagar', 'Ghaziabad', 'Ghazipur', 'Gonda', 'Gorakhpur', 'Hamirpur', 'Hapur', 'Hardoi', 'Hathras', 'Jalaun', 'Jaunpur', 'Jhansi', 'Kannauj', 'Kanpur Dehat', 'Kanpur Nagar', 'Kasganj', 'Kaushambi', 'Kheri', 'Kushinagar', 'Lalitpur', 'Lucknow', 'Maharajganj', 'Mahoba', 'Mainpuri', 'Mathura', 'Mau', 'Meerut', 'Mirzapur', 'Moradabad', 'Muzaffarnagar', 'Pilibhit', 'Pratapgarh', 'Raebareli', 'Rampur', 'Saharanpur', 'Sambhal', 'Sant Kabir Nagar', 'Shahjahanpur', 'Shamli', 'Shravasti', 'Siddharthnagar', 'Sitapur', 'Sonbhadra', 'Sultanpur', 'Unnao', 'Varanasi'];
 
         function addDistrict(selectedCountry) {
             optionsDistrict.innerHTML = "";
             districts.forEach(district => {
-                let isSelected = district == selectedCountry ? "selected" : "";
-                let li = `<li onclick="updateDistrictName(this)" class="${isSelected}">${district}</li>`;
+                let li = `<li onclick="updateDistrictName(this)">${district}</li>`;
                 optionsDistrict.insertAdjacentHTML("beforeend", li);
             });
         }
@@ -2057,6 +2496,8 @@
             addDistrict(selectedLi.innerText);
             wrapperDistrict.classList.remove("active");
             selectBtnDistrict.firstElementChild.innerText = selectedLi.innerText;
+            downArrowDistrict.style.display = 'none'
+            crossArrowDistrict.style.display = 'block'
         }
         searchInpDistrict.addEventListener("keyup", () => {
             let arr = [];
@@ -2064,12 +2505,18 @@
             arr = countries.filter(data => {
                 return data.toLowerCase().startsWith(searchWord);
             }).map(data => {
-                let isSelected = data == selectBtnDistrict.firstElementChild.innerText ? "selected" : "";
-                return `<li onclick="updateDistrictName(this)" class="${isSelected}">${data}</li>`;
+                return `<li onclick="updateDistrictName(this)">${data}</li>`;
             }).join("");
             optionsDistrict.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
         });
-        selectBtnDistrict.addEventListener("click", () => wrapperDistrict.classList.toggle("active"));
+
+        crossArrowDistrict.addEventListener('click', () => {
+            selectBtnDistrict.firstElementChild.innerText = 'Select District'
+            downArrowDistrict.style.display = 'block'
+            crossArrowDistrict.style.display = 'none'
+        })
+
+        selectBtnDistrict.addEventListener("click", () => contentDistrict.classList.toggle("show"));
     </script>
 
     <!-- select state -->
@@ -2077,13 +2524,16 @@
         const wrapperState = document.querySelector(".wrapper-state"),
             selectBtnState = wrapperState.querySelector(".select-btn-state"),
             searchInpState = wrapperState.querySelector(".input-state"),
-            optionsState = wrapperState.querySelector(".options-state");
+            optionsState = wrapperState.querySelector(".options-state"),
+            downArrowState = document.querySelector('.down-arrow-state'),
+            crossArrowState = document.querySelector('.cross-arrow-state'),
+            contentState = document.querySelector('.content-state')
+
         let states = ['Andaman and Nicobar Islands', 'Andhra Pradesh', 'Arunachal Pradesh', 'Assam', 'Bihar', 'Chandigarh', 'Chhattisgarh', 'Dadra and Nagar Haveli', 'Daman and Diu', 'Delhi', 'Goa', 'Gujarat', 'Haryana', 'Himachal Pradesh', 'Jammu and Kashmir', 'Jharkhand', 'Karnataka', 'Kerala', 'Ladakh', 'Lakshadweep', 'Madhya Pradesh', 'Maharashtra', 'Manipur', 'Meghalaya', 'Mizoram', 'Nagaland', 'Odisha', 'Puducherry', 'Punjab', 'Rajasthan', 'Sikkim', 'Tamil Nadu', 'Telangana', 'Tripura', 'Uttar Pradesh', 'Uttarakhand', 'West Bengal'];
         function addState(selectedCountry) {
             optionsState.innerHTML = "";
             states.forEach(state => {
-                let isSelected = state == selectedCountry ? "selected" : "";
-                let li = `<li onclick="updateStateName(this)" class="${isSelected}">${state}</li>`;
+                let li = `<li onclick="updateStateName(this)">${state}</li>`;
                 optionsState.insertAdjacentHTML("beforeend", li);
             });
         }
@@ -2093,6 +2543,8 @@
             addState(selectedLi.innerText);
             wrapperState.classList.remove("active");
             selectBtnState.firstElementChild.innerText = selectedLi.innerText;
+            downArrowState.style.display = 'none'
+            crossArrowState.style.display = 'block'
         }
         searchInpState.addEventListener("keyup", () => {
             let arr = [];
@@ -2100,12 +2552,18 @@
             arr = countries.filter(data => {
                 return data.toLowerCase().startsWith(searchWord);
             }).map(data => {
-                let isSelected = data == selectBtnState.firstElementChild.innerText ? "selected" : "";
-                return `<li onclick="updateStateName(this)" class="${isSelected}">${data}</li>`;
+                return `<li onclick="updateStateName(this)">${data}</li>`;
             }).join("");
             optionsState.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
         });
-        selectBtnState.addEventListener("click", () => wrapperState.classList.toggle("active"));
+
+        crossArrowState.addEventListener('click', () => {
+            selectBtnState.firstElementChild.innerText = "Select State"
+            downArrowState.style.display = 'block'
+            crossArrowState.style.display = 'none'
+        })
+
+        selectBtnState.addEventListener("click", () => contentState.classList.toggle("show"));
     </script>
 
     <!-- select countries -->
@@ -2113,18 +2571,267 @@
         const wrapperCountries = document.querySelector(".wrapper-countries"),
             selectBtnCountries = wrapperCountries.querySelector(".select-btn-countries"),
             searchInpCountries = wrapperCountries.querySelector(".input-countries"),
-            optionsCountries = wrapperCountries.querySelector(".options-countries");
-        let countries = ["Afghanistan", "Algeria", "Argentina", "Australia", "Bangladesh", "Belgium", "Bhutan",
-            "Brazil", "Canada", "China", "Denmark", "Ethiopia", "Finland", "France", "Germany",
-            "Hungary", "Iceland", "India", "Indonesia", "Iran", "Italy", "Japan", "Malaysia",
-            "Maldives", "Mexico", "Morocco", "Nepal", "Netherlands", "Nigeria", "Norway", "Pakistan",
-            "Peru", "Russia", "Romania", "South Africa", "Spain", "Sri Lanka", "Sweden", "Switzerland",
-            "Thailand", "Turkey", "Uganda", "Ukraine", "United States", "United Kingdom", "Vietnam"];
+            optionsCountries = wrapperCountries.querySelector(".options-countries"),
+            downArrowCountries = document.querySelector('.down-arrow-countries'),
+            crossArrowcCountries = document.querySelector('.cross-arrow-countries'),
+            contentCountries = document.querySelector('.content-countries')
+
+        let countries = [
+            { "countryCode": "AD", "countryName": "Andorra", "Image Name": "Andorra-AD www.livepincode.com" },
+            { "countryCode": "AE", "countryName": "United Arab Emirates", "Image Name": "United Arab Emirates-AE www.livepincode.com" },
+            { "countryCode": "AF", "countryName": "Afghanistan", "Image Name": "Afghanistan-AF www.livepincode.com" },
+            { "countryCode": "AG", "countryName": "Antigua and Barbuda", "Image Name": "Antigua and Barbuda-AG www.livepincode.com" },
+            { "countryCode": "AI", "countryName": "Anguilla", "Image Name": "Anguilla-AI www.livepincode.com" },
+            { "countryCode": "AL", "countryName": "Albania", "Image Name": "Albania-AL www.livepincode.com" },
+            { "countryCode": "AM", "countryName": "Armenia", "Image Name": "Armenia-AM www.livepincode.com" },
+            { "countryCode": "AO", "countryName": "Angola", "Image Name": "Angola-AO www.livepincode.com" },
+            { "countryCode": "AQ", "countryName": "Antarctica", "Image Name": "Antarctica-AQ www.livepincode.com" },
+            { "countryCode": "AR", "countryName": "Argentina", "Image Name": "Argentina-AR www.livepincode.com" },
+            { "countryCode": "AS", "countryName": "American Samoa", "Image Name": "American Samoa-AS www.livepincode.com" },
+            { "countryCode": "AT", "countryName": "Austria", "Image Name": "Austria-AT www.livepincode.com" },
+            { "countryCode": "AU", "countryName": "Australia", "Image Name": "Australia-AU www.livepincode.com" },
+            { "countryCode": "AW", "countryName": "Aruba", "Image Name": "Aruba-AW www.livepincode.com" },
+            { "countryCode": "AX", "countryName": "Åland", "Image Name": "Åland-AX www.livepincode.com" },
+            { "countryCode": "AZ", "countryName": "Azerbaijan", "Image Name": "Azerbaijan-AZ www.livepincode.com" },
+            { "countryCode": "BA", "countryName": "Bosnia and Herzegovina", "Image Name": "Bosnia and Herzegovina-BA www.livepincode.com" },
+            { "countryCode": "BB", "countryName": "Barbados", "Image Name": "Barbados-BB www.livepincode.com" },
+            { "countryCode": "BD", "countryName": "Bangladesh", "Image Name": "Bangladesh-BD www.livepincode.com" },
+            { "countryCode": "BE", "countryName": "Belgium", "Image Name": "Belgium-BE www.livepincode.com" },
+            { "countryCode": "BF", "countryName": "Burkina Faso", "Image Name": "Burkina Faso-BF www.livepincode.com" },
+            { "countryCode": "BG", "countryName": "Bulgaria", "Image Name": "Bulgaria-BG www.livepincode.com" },
+            { "countryCode": "BH", "countryName": "Bahrain", "Image Name": "Bahrain-BH www.livepincode.com" },
+            { "countryCode": "BI", "countryName": "Burundi", "Image Name": "Burundi-BI www.livepincode.com" },
+            { "countryCode": "BJ", "countryName": "Benin", "Image Name": "Benin-BJ www.livepincode.com" },
+            { "countryCode": "BL", "countryName": "Saint Barthélemy", "Image Name": "Saint Barthélemy-BL www.livepincode.com" },
+            { "countryCode": "BM", "countryName": "Bermuda", "Image Name": "Bermuda-BM www.livepincode.com" },
+            { "countryCode": "BN", "countryName": "Brunei", "Image Name": "Brunei-BN www.livepincode.com" },
+            { "countryCode": "BO", "countryName": "Bolivia", "Image Name": "Bolivia-BO www.livepincode.com" },
+            { "countryCode": "BQ", "countryName": "Bonaire, Sint Eustatius, and Saba", "Image Name": "Bonaire, Sint Eustatius, and Saba-BQ www.livepincode.com" },
+            { "countryCode": "BR", "countryName": "Brazil", "Image Name": "Brazil-BR www.livepincode.com" },
+            { "countryCode": "BS", "countryName": "Bahamas", "Image Name": "Bahamas-BS www.livepincode.com" },
+            { "countryCode": "BT", "countryName": "Bhutan", "Image Name": "Bhutan-BT www.livepincode.com" },
+            { "countryCode": "BV", "countryName": "Bouvet Island", "Image Name": "Bouvet Island-BV www.livepincode.com" },
+            { "countryCode": "BW", "countryName": "Botswana", "Image Name": "Botswana-BW www.livepincode.com" },
+            { "countryCode": "BY", "countryName": "Belarus", "Image Name": "Belarus-BY www.livepincode.com" },
+            { "countryCode": "BZ", "countryName": "Belize", "Image Name": "Belize-BZ www.livepincode.com" },
+            { "countryCode": "CA", "countryName": "Canada", "Image Name": "Canada-CA www.livepincode.com" },
+            { "countryCode": "CC", "countryName": "Cocos (Keeling) Islands", "Image Name": "Cocos (Keeling) Islands-CC www.livepincode.com" },
+            { "countryCode": "CD", "countryName": "DR Congo", "Image Name": "DR Congo-CD www.livepincode.com" },
+            { "countryCode": "CF", "countryName": "Central African Republic", "Image Name": "Central African Republic-CF www.livepincode.com" },
+            { "countryCode": "CG", "countryName": "Congo Republic", "Image Name": "Congo Republic-CG www.livepincode.com" },
+            { "countryCode": "CH", "countryName": "Switzerland", "Image Name": "Switzerland-CH www.livepincode.com" },
+            { "countryCode": "CI", "countryName": "Ivory Coast", "Image Name": "Ivory Coast-CI www.livepincode.com" },
+            { "countryCode": "CK", "countryName": "Cook Islands", "Image Name": "Cook Islands-CK www.livepincode.com" },
+            { "countryCode": "CL", "countryName": "Chile", "Image Name": "Chile-CL www.livepincode.com" },
+            { "countryCode": "CM", "countryName": "Cameroon", "Image Name": "Cameroon-CM www.livepincode.com" },
+            { "countryCode": "CN", "countryName": "China", "Image Name": "China-CN www.livepincode.com" },
+            { "countryCode": "CO", "countryName": "Colombia", "Image Name": "Colombia-CO www.livepincode.com" },
+            { "countryCode": "CR", "countryName": "Costa Rica", "Image Name": "Costa Rica-CR www.livepincode.com" },
+            { "countryCode": "CU", "countryName": "Cuba", "Image Name": "Cuba-CU www.livepincode.com" },
+            { "countryCode": "CV", "countryName": "Cabo Verde", "Image Name": "Cabo Verde-CV www.livepincode.com" },
+            { "countryCode": "CW", "countryName": "Curaçao", "Image Name": "Curaçao-CW www.livepincode.com" },
+            { "countryCode": "CX", "countryName": "Christmas Island", "Image Name": "Christmas Island-CX www.livepincode.com" },
+            { "countryCode": "CY", "countryName": "Cyprus", "Image Name": "Cyprus-CY www.livepincode.com" },
+            { "countryCode": "CZ", "countryName": "Czechia", "Image Name": "Czechia-CZ www.livepincode.com" },
+            { "countryCode": "DE", "countryName": "Germany", "Image Name": "Germany-DE www.livepincode.com" },
+            { "countryCode": "DJ", "countryName": "Djibouti", "Image Name": "Djibouti-DJ www.livepincode.com" },
+            { "countryCode": "DK", "countryName": "Denmark", "Image Name": "Denmark-DK www.livepincode.com" },
+            { "countryCode": "DM", "countryName": "Dominica", "Image Name": "Dominica-DM www.livepincode.com" },
+            { "countryCode": "DO", "countryName": "Dominican Republic", "Image Name": "Dominican Republic-DO www.livepincode.com" },
+            { "countryCode": "DZ", "countryName": "Algeria", "Image Name": "Algeria-DZ www.livepincode.com" },
+            { "countryCode": "EC", "countryName": "Ecuador", "Image Name": "Ecuador-EC www.livepincode.com" },
+            { "countryCode": "EE", "countryName": "Estonia", "Image Name": "Estonia-EE www.livepincode.com" },
+            { "countryCode": "EG", "countryName": "Egypt", "Image Name": "Egypt-EG www.livepincode.com" },
+            { "countryCode": "EH", "countryName": "Western Sahara", "Image Name": "Western Sahara-EH www.livepincode.com" },
+            { "countryCode": "ER", "countryName": "Eritrea", "Image Name": "Eritrea-ER www.livepincode.com" },
+            { "countryCode": "ES", "countryName": "Spain", "Image Name": "Spain-ES www.livepincode.com" },
+            { "countryCode": "ET", "countryName": "Ethiopia", "Image Name": "Ethiopia-ET www.livepincode.com" },
+            { "countryCode": "FI", "countryName": "Finland", "Image Name": "Finland-FI www.livepincode.com" },
+            { "countryCode": "FJ", "countryName": "Fiji", "Image Name": "Fiji-FJ www.livepincode.com" },
+            { "countryCode": "FK", "countryName": "Falkland Islands", "Image Name": "Falkland Islands-FK www.livepincode.com" },
+            { "countryCode": "FM", "countryName": "Micronesia", "Image Name": "Micronesia-FM www.livepincode.com" },
+            { "countryCode": "FO", "countryName": "Faroe Islands", "Image Name": "Faroe Islands-FO www.livepincode.com" },
+            { "countryCode": "FR", "countryName": "France", "Image Name": "France-FR www.livepincode.com" },
+            { "countryCode": "GA", "countryName": "Gabon", "Image Name": "Gabon-GA www.livepincode.com" },
+            { "countryCode": "GB", "countryName": "United Kingdom", "Image Name": "United Kingdom-GB www.livepincode.com" },
+            { "countryCode": "GD", "countryName": "Grenada", "Image Name": "Grenada-GD www.livepincode.com" },
+            { "countryCode": "GE", "countryName": "Georgia", "Image Name": "Georgia-GE www.livepincode.com" },
+            { "countryCode": "GF", "countryName": "French Guiana", "Image Name": "French Guiana-GF www.livepincode.com" },
+            { "countryCode": "GG", "countryName": "Guernsey", "Image Name": "Guernsey-GG www.livepincode.com" },
+            { "countryCode": "GH", "countryName": "Ghana", "Image Name": "Ghana-GH www.livepincode.com" },
+            { "countryCode": "GI", "countryName": "Gibraltar", "Image Name": "Gibraltar-GI www.livepincode.com" },
+            { "countryCode": "GL", "countryName": "Greenland", "Image Name": "Greenland-GL www.livepincode.com" },
+            { "countryCode": "GM", "countryName": "The Gambia", "Image Name": "The Gambia-GM www.livepincode.com" },
+            { "countryCode": "GN", "countryName": "Guinea", "Image Name": "Guinea-GN www.livepincode.com" },
+            { "countryCode": "GP", "countryName": "Guadeloupe", "Image Name": "Guadeloupe-GP www.livepincode.com" },
+            { "countryCode": "GQ", "countryName": "Equatorial Guinea", "Image Name": "Equatorial Guinea-GQ www.livepincode.com" },
+            { "countryCode": "GR", "countryName": "Greece", "Image Name": "Greece-GR www.livepincode.com" },
+            { "countryCode": "GS", "countryName": "South Georgia and South Sandwich Islands", "Image Name": "South Georgia and South Sandwich Islands-GS www.livepincode.com" },
+            { "countryCode": "GT", "countryName": "Guatemala", "Image Name": "Guatemala-GT www.livepincode.com" },
+            { "countryCode": "GU", "countryName": "Guam", "Image Name": "Guam-GU www.livepincode.com" },
+            { "countryCode": "GW", "countryName": "Guinea-Bissau", "Image Name": "Guinea-Bissau-GW www.livepincode.com" },
+            { "countryCode": "GY", "countryName": "Guyana", "Image Name": "Guyana-GY www.livepincode.com" },
+            { "countryCode": "HK", "countryName": "Hong Kong", "Image Name": "Hong Kong-HK www.livepincode.com" },
+            { "countryCode": "HM", "countryName": "Heard and McDonald Islands", "Image Name": "Heard and McDonald Islands-HM www.livepincode.com" },
+            { "countryCode": "HN", "countryName": "Honduras", "Image Name": "Honduras-HN www.livepincode.com" },
+            { "countryCode": "HR", "countryName": "Croatia", "Image Name": "Croatia-HR www.livepincode.com" },
+            { "countryCode": "HT", "countryName": "Haiti", "Image Name": "Haiti-HT www.livepincode.com" },
+            { "countryCode": "HU", "countryName": "Hungary", "Image Name": "Hungary-HU www.livepincode.com" },
+            { "countryCode": "ID", "countryName": "Indonesia", "Image Name": "Indonesia-ID www.livepincode.com" },
+            { "countryCode": "IE", "countryName": "Ireland", "Image Name": "Ireland-IE www.livepincode.com" },
+            { "countryCode": "IL", "countryName": "Israel", "Image Name": "Israel-IL www.livepincode.com" },
+            { "countryCode": "IM", "countryName": "Isle of Man", "Image Name": "Isle of Man-IM www.livepincode.com" },
+            { "countryCode": "IN", "countryName": "India", "Image Name": "India-IN www.livepincode.com" },
+            { "countryCode": "IO", "countryName": "British Indian Ocean Territory", "Image Name": "British Indian Ocean Territory-IO www.livepincode.com" },
+            { "countryCode": "IQ", "countryName": "Iraq", "Image Name": "Iraq-IQ www.livepincode.com" },
+            { "countryCode": "IR", "countryName": "Iran", "Image Name": "Iran-IR www.livepincode.com" },
+            { "countryCode": "IS", "countryName": "Iceland", "Image Name": "Iceland-IS www.livepincode.com" },
+            { "countryCode": "IT", "countryName": "Italy", "Image Name": "Italy-IT www.livepincode.com" },
+            { "countryCode": "JE", "countryName": "Jersey", "Image Name": "Jersey-JE www.livepincode.com" },
+            { "countryCode": "JM", "countryName": "Jamaica", "Image Name": "Jamaica-JM www.livepincode.com" },
+            { "countryCode": "JO", "countryName": "Jordan", "Image Name": "Jordan-JO www.livepincode.com" },
+            { "countryCode": "JP", "countryName": "Japan", "Image Name": "Japan-JP www.livepincode.com" },
+            { "countryCode": "KE", "countryName": "Kenya", "Image Name": "Kenya-KE www.livepincode.com" },
+            { "countryCode": "KG", "countryName": "Kyrgyzstan", "Image Name": "Kyrgyzstan-KG www.livepincode.com" },
+            { "countryCode": "KH", "countryName": "Cambodia", "Image Name": "Cambodia-KH www.livepincode.com" },
+            { "countryCode": "KI", "countryName": "Kiribati", "Image Name": "Kiribati-KI www.livepincode.com" },
+            { "countryCode": "KM", "countryName": "Comoros", "Image Name": "Comoros-KM www.livepincode.com" },
+            { "countryCode": "KN", "countryName": "St Kitts and Nevis", "Image Name": "St Kitts and Nevis-KN www.livepincode.com" },
+            { "countryCode": "KP", "countryName": "North Korea", "Image Name": "North Korea-KP www.livepincode.com" },
+            { "countryCode": "KR", "countryName": "South Korea", "Image Name": "South Korea-KR www.livepincode.com" },
+            { "countryCode": "KW", "countryName": "Kuwait", "Image Name": "Kuwait-KW www.livepincode.com" },
+            { "countryCode": "KY", "countryName": "Cayman Islands", "Image Name": "Cayman Islands-KY www.livepincode.com" },
+            { "countryCode": "KZ", "countryName": "Kazakhstan", "Image Name": "Kazakhstan-KZ www.livepincode.com" },
+            { "countryCode": "LA", "countryName": "Laos", "Image Name": "Laos-LA www.livepincode.com" },
+            { "countryCode": "LB", "countryName": "Lebanon", "Image Name": "Lebanon-LB www.livepincode.com" },
+            { "countryCode": "LC", "countryName": "Saint Lucia", "Image Name": "Saint Lucia-LC www.livepincode.com" },
+            { "countryCode": "LI", "countryName": "Liechtenstein", "Image Name": "Liechtenstein-LI www.livepincode.com" },
+            { "countryCode": "LK", "countryName": "Sri Lanka", "Image Name": "Sri Lanka-LK www.livepincode.com" },
+            { "countryCode": "LR", "countryName": "Liberia", "Image Name": "Liberia-LR www.livepincode.com" },
+            { "countryCode": "LS", "countryName": "Lesotho", "Image Name": "Lesotho-LS www.livepincode.com" },
+            { "countryCode": "LT", "countryName": "Lithuania", "Image Name": "Lithuania-LT www.livepincode.com" },
+            { "countryCode": "LU", "countryName": "Luxembourg", "Image Name": "Luxembourg-LU www.livepincode.com" },
+            { "countryCode": "LV", "countryName": "Latvia", "Image Name": "Latvia-LV www.livepincode.com" },
+            { "countryCode": "LY", "countryName": "Libya", "Image Name": "Libya-LY www.livepincode.com" },
+            { "countryCode": "MA", "countryName": "Morocco", "Image Name": "Morocco-MA www.livepincode.com" },
+            { "countryCode": "MC", "countryName": "Monaco", "Image Name": "Monaco-MC www.livepincode.com" },
+            { "countryCode": "MD", "countryName": "Moldova", "Image Name": "Moldova-MD www.livepincode.com" },
+            { "countryCode": "ME", "countryName": "Montenegro", "Image Name": "Montenegro-ME www.livepincode.com" },
+            { "countryCode": "MF", "countryName": "Saint Martin", "Image Name": "Saint Martin-MF www.livepincode.com" },
+            { "countryCode": "MG", "countryName": "Madagascar", "Image Name": "Madagascar-MG www.livepincode.com" },
+            { "countryCode": "MH", "countryName": "Marshall Islands", "Image Name": "Marshall Islands-MH www.livepincode.com" },
+            { "countryCode": "MK", "countryName": "North Macedonia", "Image Name": "North Macedonia-MK www.livepincode.com" },
+            { "countryCode": "ML", "countryName": "Mali", "Image Name": "Mali-ML www.livepincode.com" },
+            { "countryCode": "MM", "countryName": "Myanmar", "Image Name": "Myanmar-MM www.livepincode.com" },
+            { "countryCode": "MN", "countryName": "Mongolia", "Image Name": "Mongolia-MN www.livepincode.com" },
+            { "countryCode": "MO", "countryName": "Macao", "Image Name": "Macao-MO www.livepincode.com" },
+            { "countryCode": "MP", "countryName": "Northern Mariana Islands", "Image Name": "Northern Mariana Islands-MP www.livepincode.com" },
+            { "countryCode": "MQ", "countryName": "Martinique", "Image Name": "Martinique-MQ www.livepincode.com" },
+            { "countryCode": "MR", "countryName": "Mauritania", "Image Name": "Mauritania-MR www.livepincode.com" },
+            { "countryCode": "MS", "countryName": "Montserrat", "Image Name": "Montserrat-MS www.livepincode.com" },
+            { "countryCode": "MT", "countryName": "Malta", "Image Name": "Malta-MT www.livepincode.com" },
+            { "countryCode": "MU", "countryName": "Mauritius", "Image Name": "Mauritius-MU www.livepincode.com" },
+            { "countryCode": "MV", "countryName": "Maldives", "Image Name": "Maldives-MV www.livepincode.com" },
+            { "countryCode": "MW", "countryName": "Malawi", "Image Name": "Malawi-MW www.livepincode.com" },
+            { "countryCode": "MX", "countryName": "Mexico", "Image Name": "Mexico-MX www.livepincode.com" },
+            { "countryCode": "MY", "countryName": "Malaysia", "Image Name": "Malaysia-MY www.livepincode.com" },
+            { "countryCode": "MZ", "countryName": "Mozambique", "Image Name": "Mozambique-MZ www.livepincode.com" },
+            { "countryCode": "NA", "countryName": "Namibia", "Image Name": "Namibia-NA www.livepincode.com" },
+            { "countryCode": "NC", "countryName": "New Caledonia", "Image Name": "New Caledonia-NC www.livepincode.com" },
+            { "countryCode": "NE", "countryName": "Niger", "Image Name": "Niger-NE www.livepincode.com" },
+            { "countryCode": "NF", "countryName": "Norfolk Island", "Image Name": "Norfolk Island-NF www.livepincode.com" },
+            { "countryCode": "NG", "countryName": "Nigeria", "Image Name": "Nigeria-NG www.livepincode.com" },
+            { "countryCode": "NI", "countryName": "Nicaragua", "Image Name": "Nicaragua-NI www.livepincode.com" },
+            { "countryCode": "NL", "countryName": "Netherlands", "Image Name": "Netherlands-NL www.livepincode.com" },
+            { "countryCode": "NO", "countryName": "Norway", "Image Name": "Norway-NO www.livepincode.com" },
+            { "countryCode": "NP", "countryName": "Nepal", "Image Name": "Nepal-NP www.livepincode.com" },
+            { "countryCode": "NR", "countryName": "Nauru", "Image Name": "Nauru-NR www.livepincode.com" },
+            { "countryCode": "NU", "countryName": "Niue", "Image Name": "Niue-NU www.livepincode.com" },
+            { "countryCode": "NZ", "countryName": "New Zealand", "Image Name": "New Zealand-NZ www.livepincode.com" },
+            { "countryCode": "OM", "countryName": "Oman", "Image Name": "Oman-OM www.livepincode.com" },
+            { "countryCode": "PA", "countryName": "Panama", "Image Name": "Panama-PA www.livepincode.com" },
+            { "countryCode": "PE", "countryName": "Peru", "Image Name": "Peru-PE www.livepincode.com" },
+            { "countryCode": "PF", "countryName": "French Polynesia", "Image Name": "French Polynesia-PF www.livepincode.com" },
+            { "countryCode": "PG", "countryName": "Papua New Guinea", "Image Name": "Papua New Guinea-PG www.livepincode.com" },
+            { "countryCode": "PH", "countryName": "Philippines", "Image Name": "Philippines-PH www.livepincode.com" },
+            { "countryCode": "PK", "countryName": "Pakistan", "Image Name": "Pakistan-PK www.livepincode.com" },
+            { "countryCode": "PL", "countryName": "Poland", "Image Name": "Poland-PL www.livepincode.com" },
+            { "countryCode": "PM", "countryName": "Saint Pierre and Miquelon", "Image Name": "Saint Pierre and Miquelon-PM www.livepincode.com" },
+            { "countryCode": "PN", "countryName": "Pitcairn Islands", "Image Name": "Pitcairn Islands-PN www.livepincode.com" },
+            { "countryCode": "PR", "countryName": "Puerto Rico", "Image Name": "Puerto Rico-PR www.livepincode.com" },
+            { "countryCode": "PS", "countryName": "Palestine", "Image Name": "Palestine-PS www.livepincode.com" },
+            { "countryCode": "PT", "countryName": "Portugal", "Image Name": "Portugal-PT www.livepincode.com" },
+            { "countryCode": "PW", "countryName": "Palau", "Image Name": "Palau-PW www.livepincode.com" },
+            { "countryCode": "PY", "countryName": "Paraguay", "Image Name": "Paraguay-PY www.livepincode.com" },
+            { "countryCode": "QA", "countryName": "Qatar", "Image Name": "Qatar-QA www.livepincode.com" },
+            { "countryCode": "RE", "countryName": "Réunion", "Image Name": "Réunion-RE www.livepincode.com" },
+            { "countryCode": "RO", "countryName": "Romania", "Image Name": "Romania-RO www.livepincode.com" },
+            { "countryCode": "RS", "countryName": "Serbia", "Image Name": "Serbia-RS www.livepincode.com" },
+            { "countryCode": "RU", "countryName": "Russia", "Image Name": "Russia-RU www.livepincode.com" },
+            { "countryCode": "RW", "countryName": "Rwanda", "Image Name": "Rwanda-RW www.livepincode.com" },
+            { "countryCode": "SA", "countryName": "Saudi Arabia", "Image Name": "Saudi Arabia-SA www.livepincode.com" },
+            { "countryCode": "SB", "countryName": "Solomon Islands", "Image Name": "Solomon Islands-SB www.livepincode.com" },
+            { "countryCode": "SC", "countryName": "Seychelles", "Image Name": "Seychelles-SC www.livepincode.com" },
+            { "countryCode": "SD", "countryName": "Sudan", "Image Name": "Sudan-SD www.livepincode.com" },
+            { "countryCode": "SE", "countryName": "Sweden", "Image Name": "Sweden-SE www.livepincode.com" },
+            { "countryCode": "SG", "countryName": "Singapore", "Image Name": "Singapore-SG www.livepincode.com" },
+            { "countryCode": "SH", "countryName": "Saint Helena", "Image Name": "Saint Helena-SH www.livepincode.com" },
+            { "countryCode": "SI", "countryName": "Slovenia", "Image Name": "Slovenia-SI www.livepincode.com" },
+            { "countryCode": "SJ", "countryName": "Svalbard and Jan Mayen", "Image Name": "Svalbard and Jan Mayen-SJ www.livepincode.com" },
+            { "countryCode": "SK", "countryName": "Slovakia", "Image Name": "Slovakia-SK www.livepincode.com" },
+            { "countryCode": "SL", "countryName": "Sierra Leone", "Image Name": "Sierra Leone-SL www.livepincode.com" },
+            { "countryCode": "SM", "countryName": "San Marino", "Image Name": "San Marino-SM www.livepincode.com" },
+            { "countryCode": "SN", "countryName": "Senegal", "Image Name": "Senegal-SN www.livepincode.com" },
+            { "countryCode": "SO", "countryName": "Somalia", "Image Name": "Somalia-SO www.livepincode.com" },
+            { "countryCode": "SR", "countryName": "Suriname", "Image Name": "Suriname-SR www.livepincode.com" },
+            { "countryCode": "SS", "countryName": "South Sudan", "Image Name": "South Sudan-SS www.livepincode.com" },
+            { "countryCode": "ST", "countryName": "São Tomé and Príncipe", "Image Name": "São Tomé and Príncipe-ST www.livepincode.com" },
+            { "countryCode": "SV", "countryName": "El Salvador", "Image Name": "El Salvador-SV www.livepincode.com" },
+            { "countryCode": "SX", "countryName": "Sint Maarten", "Image Name": "Sint Maarten-SX www.livepincode.com" },
+            { "countryCode": "SY", "countryName": "Syria", "Image Name": "Syria-SY www.livepincode.com" },
+            { "countryCode": "SZ", "countryName": "Eswatini", "Image Name": "Eswatini-SZ www.livepincode.com" },
+            { "countryCode": "TC", "countryName": "Turks and Caicos Islands", "Image Name": "Turks and Caicos Islands-TC www.livepincode.com" },
+            { "countryCode": "TD", "countryName": "Chad", "Image Name": "Chad-TD www.livepincode.com" },
+            { "countryCode": "TF", "countryName": "French Southern Territories", "Image Name": "French Southern Territories-TF www.livepincode.com" },
+            { "countryCode": "TG", "countryName": "Togo", "Image Name": "Togo-TG www.livepincode.com" },
+            { "countryCode": "TH", "countryName": "Thailand", "Image Name": "Thailand-TH www.livepincode.com" },
+            { "countryCode": "TJ", "countryName": "Tajikistan", "Image Name": "Tajikistan-TJ www.livepincode.com" },
+            { "countryCode": "TK", "countryName": "Tokelau", "Image Name": "Tokelau-TK www.livepincode.com" },
+            { "countryCode": "TL", "countryName": "Timor-Leste", "Image Name": "Timor-Leste-TL www.livepincode.com" },
+            { "countryCode": "TM", "countryName": "Turkmenistan", "Image Name": "Turkmenistan-TM www.livepincode.com" },
+            { "countryCode": "TN", "countryName": "Tunisia", "Image Name": "Tunisia-TN www.livepincode.com" },
+            { "countryCode": "TO", "countryName": "Tonga", "Image Name": "Tonga-TO www.livepincode.com" },
+            { "countryCode": "TR", "countryName": "Turkey", "Image Name": "Turkey-TR www.livepincode.com" },
+            { "countryCode": "TT", "countryName": "Trinidad and Tobago", "Image Name": "Trinidad and Tobago-TT www.livepincode.com" },
+            { "countryCode": "TV", "countryName": "Tuvalu", "Image Name": "Tuvalu-TV www.livepincode.com" },
+            { "countryCode": "TW", "countryName": "Taiwan", "Image Name": "Taiwan-TW www.livepincode.com" },
+            { "countryCode": "TZ", "countryName": "Tanzania", "Image Name": "Tanzania-TZ www.livepincode.com" },
+            { "countryCode": "UA", "countryName": "Ukraine", "Image Name": "Ukraine-UA www.livepincode.com" },
+            { "countryCode": "UG", "countryName": "Uganda", "Image Name": "Uganda-UG www.livepincode.com" },
+            { "countryCode": "UM", "countryName": "U.S. Outlying Islands", "Image Name": "U.S. Outlying Islands-UM www.livepincode.com" },
+            { "countryCode": "US", "countryName": "United States", "Image Name": "United States-US www.livepincode.com" },
+            { "countryCode": "UY", "countryName": "Uruguay", "Image Name": "Uruguay-UY www.livepincode.com" },
+            { "countryCode": "UZ", "countryName": "Uzbekistan", "Image Name": "Uzbekistan-UZ www.livepincode.com" },
+            { "countryCode": "VA", "countryName": "Vatican City", "Image Name": "Vatican City-VA www.livepincode.com" },
+            { "countryCode": "VC", "countryName": "St Vincent and Grenadines", "Image Name": "St Vincent and Grenadines-VC www.livepincode.com" },
+            { "countryCode": "VE", "countryName": "Venezuela", "Image Name": "Venezuela-VE www.livepincode.com" },
+            { "countryCode": "VG", "countryName": "British Virgin Islands", "Image Name": "British Virgin Islands-VG www.livepincode.com" },
+            { "countryCode": "VI", "countryName": "U.S. Virgin Islands", "Image Name": "U.S. Virgin Islands-VI www.livepincode.com" },
+            { "countryCode": "VN", "countryName": "Vietnam", "Image Name": "Vietnam-VN www.livepincode.com" },
+            { "countryCode": "VU", "countryName": "Vanuatu", "Image Name": "Vanuatu-VU www.livepincode.com" },
+            { "countryCode": "WF", "countryName": "Wallis and Futuna", "Image Name": "Wallis and Futuna-WF www.livepincode.com" },
+            { "countryCode": "WS", "countryName": "Samoa", "Image Name": "Samoa-WS www.livepincode.com" },
+            { "countryCode": "XK", "countryName": "Kosovo", "Image Name": "Kosovo-XK www.livepincode.com" },
+            { "countryCode": "YE", "countryName": "Yemen", "Image Name": "Yemen-YE www.livepincode.com" },
+            { "countryCode": "YT", "countryName": "Mayotte", "Image Name": "Mayotte-YT www.livepincode.com" },
+            { "countryCode": "ZA", "countryName": "South Africa", "Image Name": "South Africa-ZA www.livepincode.com" },
+            { "countryCode": "ZM", "countryName": "Zambia", "Image Name": "Zambia-ZM www.livepincode.com" },
+            { "countryCode": "ZW", "countryName": "Zimbabwe", "Image Name": "Zimbabwe-ZW www.livepincode.com" }
+        ]
         function addCountry(selectedCountry) {
             optionsCountries.innerHTML = "";
             countries.forEach(country => {
-                let isSelected = country == selectedCountry ? "selected" : "";
-                let li = `<li onclick="updateCountryName(this)" class="${isSelected}">${country}</li>`;
+                let li = `<li onclick="updateCountryName(this)"><img src="./1x1/${country.countryCode.toLowerCase()}.svg"/> <span>${country.countryName}</span></li>`;
                 optionsCountries.insertAdjacentHTML("beforeend", li);
             });
         }
@@ -2133,20 +2840,26 @@
             searchInpCountries.value = "";
             addCountry(selectedLi.innerText);
             wrapperCountries.classList.remove("active");
-            selectBtnCountries.firstElementChild.innerText = selectedLi.innerText;
+            selectBtnCountries.innerHTML = selectedLi.innerHTML;
+            downArrowCountries.style.display = 'none'
+            crossArrowcCountries.style.display = 'block'
         }
         searchInpCountries.addEventListener("keyup", () => {
             let arr = [];
             let searchWord = searchInpCountries.value.toLowerCase();
             arr = countries.filter(data => {
-                return data.toLowerCase().startsWith(searchWord);
+                return data.countryName.toLowerCase().startsWith(searchWord);
             }).map(data => {
-                let isSelected = data == selectBtnCountries.firstElementChild.innerText ? "selected" : "";
-                return `<li onclick="updateCountryName(this)" class="${isSelected}">${data}</li>`;
+                return `<li onclick="updateCountryName(this)"><img src="./1x1/${data.countryCode.toLowerCase()}.svg" <span>${data.countryName}</span></li>`;
             }).join("");
             optionsCountries.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
         });
-        selectBtnCountries.addEventListener("click", () => wrapperCountries.classList.toggle("active"));
+        crossArrowcCountries.addEventListener('click', () => {
+            selectBtnCountries.innerHTML = `<span>Select Country</span>`
+            downArrowCountries.style.display = 'block'
+            crossArrowcCountries.style.display = 'none'
+        })
+        selectBtnCountries.addEventListener("click", () => contentCountries.classList.toggle("show"));
     </script>
 
 

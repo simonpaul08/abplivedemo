@@ -165,11 +165,25 @@ select option:hover{
   border-radius: 7px;
   color: #a5a5a5;
   font-weight: 400;
-  justify-content: space-between;
+}
+.select-btn img {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  margin-right: 5px;
 }
 .select-btn i{
   font-size: 31px;
   transition: transform 0.3s linear;
+}
+.cross-mark {
+  display: none;
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  z-index: 100;
+  color: #f00000;
+  font-size: 14px;
 }
 .wrapper.active .select-btn i{
   transform: rotate(-180deg);
@@ -177,7 +191,7 @@ select option:hover{
 .content{
   position: absolute;
   display: none;
-  padding: 15px;
+  padding: 10px;
   margin-top: 6px;
   background: #fff;
   border-radius: 7px;
@@ -195,6 +209,7 @@ select option:hover{
   left: 15px;
   color: #999;
   font-size: 15px;
+  margin-top: 1px;
   pointer-events: none;
   transform: translateY(-50%);
   position: absolute;
@@ -204,7 +219,7 @@ select option:hover{
   outline: none;
   font-size: 13px;
   border-radius: 5px;
-  padding: 10px 0 10px 32px;
+  padding: 5px 0 5px 32px;
   border: 1px solid #B3B3B3;
 }
 .search input:focus{
@@ -218,7 +233,6 @@ select option:hover{
   margin-top: 10px;
   max-height: 250px;
   overflow-y: auto;
-  padding-right: 7px;
   padding-left: 7px !important;
 }
 .options::-webkit-scrollbar{
@@ -236,13 +250,18 @@ select option:hover{
   background: #b3b3b3;
 }
 .options li{
-  height: 50px;
-  padding: 0 13px;
-  font-size: 13px;
+  padding: 6px 13px;
+  font-size: 12px;
 }
 .options li:hover, li.selected{
   border-radius: 5px;
   background: #f2f2f2;
+}
+.options li img {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 6px;
 }
 p {
   color: #6c6c6c;
@@ -616,20 +635,37 @@ Navbar Area
 .select-language-content {
   display: none;
   position: absolute;
+  height: 150px;
+  overflow-y: scroll;
   width: 100%;
   top: 25px;
   left: 0;
+  border-radius: 4px;
   background-color: #fff;
   box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%)  !important;
   transition: display 0.4s ease-in;
   z-index: 1;
+}
+.select-language-content::-webkit-scrollbar{
+  width: 7px;
+}
+.select-language-content::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.select-language-content::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 25px;
+}
+.select-language-content::-webkit-scrollbar-thumb:hover{
+  background: #b3b3b3;
 }
 .show {
   display: block;
 }
 
 .language-item {
-  padding: 12px 16px;
+  padding: 7px 16px;
   font-size: 14px;
   transition: background-color 0.3s ease;
 }
@@ -652,6 +688,7 @@ Navbar Area
   font-weight: 600;
   margin-left: 15px;
   margin-right: 15px;
+  border-bottom: 2px solid transparent;
 }
 
 .main-nav nav .navbar-nav .nav-item a i {
@@ -664,15 +701,13 @@ Navbar Area
 .main-nav nav .navbar-nav .nav-item a:hover,
 .main-nav nav .navbar-nav .nav-item a :focus {
   color: #f00 !important;
-  border-bottom: 2px solid #f00;
-  padding-bottom: .5rem;
+  border-color:#f00;
 }
 
 .main-nav nav .navbar-nav .nav-item a.active {
   color: #f00000;
   font-weight: 700;
-  border-bottom: 2px solid #f00000;
-  padding-bottom: 0.5rem;
+  border-color: #f00000;
 }
 .main-nav nav .navbar-nav .nav-item a.active::after {
   content: ''; 
@@ -3117,29 +3152,22 @@ Buy Now Btn
   background: #f00000;
   border: none;
   color: white;
-  padding:9px;
   width: 100%;
+  height: 100%;
   border-radius: 25px 25px 25px 25px;
   font-weight: 700;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
 }
-.btn-search:hover {
-  background: #e61414;
-  border: 1px solid rgba(#000, .05);
-  /* box-shadow: 1px 1px 2px rgba(#fff, .2); */
-  color: #fff; 
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-shadow: -1px -1px 0 #8b0404;
-  transition: all 250ms linear;
-  box-shadow: none !important;
+.btn-search i {
+  font-size: 14px;
 }
+
 
 .company-logo {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #f1f1f1;
+  background-color: #f8f8f8;
   margin-right: 4px;
 }
 .company-logo img {
@@ -3148,10 +3176,10 @@ Buy Now Btn
 }
 .country-pincode-search {
   position: relative;
-  width: 100px;
+  width: 80px;
   height: 40px;
   border-radius: 25px;
-  background-color: #f1f1f1;
+  background-color: #f8f8f8;
   cursor: pointer;
 }
 .country-pincode-search img {
@@ -3173,13 +3201,27 @@ Buy Now Btn
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
 }
+.country-pincode-options::-webkit-scrollbar{
+  width: 7px;
+}
+.country-pincode-options::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.country-pincode-options::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 25px;
+}
+.country-pincode-options::-webkit-scrollbar-thumb:hover{
+  background: #b3b3b3;
+}
 .country-pincode-options-ul {
   list-style-type: none;
   margin: 0 !important;
   padding: 0 !important;
 }
 .country-pincode-item {
-  padding: 8px 12px;
+  padding: 8px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -3489,15 +3531,21 @@ thead tr{
 
 .dropbtn {
   color: #000;
-  padding:5px 8px;
+  padding: 2px 10px;
   font-size: 16px;
   border: none;
   display: flex;
-  border:2px solid rgba(255, 0, 0, 0);
+  border:  1px solid #f1f1f1;
   display: flex;
+  border-radius: 4px;
+  background-color: #fff;
   text-transform: uppercase;
   font-weight: 700;
   align-items: center;
+  transition: background-color 0.3s linear;
+}
+.dropbtn:hover {
+  background-color: #f1f1f1;
 }
 
 .dropdown {
@@ -3516,9 +3564,9 @@ thead tr{
 }
 .dropdown-content {
   display: none;
-  width: 80vw;
+  width: 73vw;
   position: absolute;
-  left: -120px;
+  left: 0;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -3540,7 +3588,7 @@ thead tr{
   transition: background-color 0.3s linear;
 }
 .flag-dropdown-item:hover {
-  background-color: #ccc;
+  background-color: #f1f1f1;
 }
 .flag-dropdown-item img {
   margin-right: 5px;
@@ -3584,27 +3632,13 @@ margin-left: -14px;
   display: block;
 }
 
-.gradient-text{
-  background:linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);
-  background-size: 200% 200%;
-  animation: rainbow 2s ease-in-out infinite;
-  background-clip: text;
-  -webkit-background-clip:text;
-  color:rgba(0,0,0,1);
-  font-weight: 700;
-  text-align:center;
-  transition: color .2s ease-in-out;
-}
-.gradient-text:hover{
-  color:rgba(0,0,0,0);
-}
 
 .pincode-area {
   position: relative;
   /* border: 1px solid #ccc; */
   background-color: #fff;
   padding: 3px 0;
-  border-radius: 8px;
+  border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .pincode-options {
@@ -3680,11 +3714,11 @@ margin-left: -14px;
 
 .card-sidebar {
   padding: 8px 15px;
-  box-shadow: rgb(0 0 0 / 10%) 2px 0px 4px 0px;
+  box-shadow: rgb(0 0 0 / 6%) 2px 0px 2px 0px;
 }
 
 .card-sidebar ul li {
-  width: 150px;
+  min-width: 150px;
   padding: 8px 18px;
   border-radius: 25px !important;
   background-color: #fff3f3;
@@ -3697,7 +3731,7 @@ margin-left: -14px;
 }
 .card-main-content 
 {
-  margin-left: 5px;
+  margin-left: 14px;
   width: 100%;
 
 }
@@ -3708,7 +3742,7 @@ margin-left: -14px;
   border-radius: 3px;
   background-color: #fff;
   margin-bottom: 8px;
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 4px 0px;
+  box-shadow: rgb(0 0 0 / 6%) -1px 2px 2px 0px;
 
 }
 .card-content-block p {
@@ -3716,11 +3750,91 @@ margin-left: -14px;
   font-size: 16px;
   font-weight: 700;
 }
-
-@keyframes rainbow { 
-  0%{background-position:left}
-  50%{background-position:right}
-  100%{background-position:left}
+.name-wise-location-post li{
+  width: 170px;
+}
+/*postcard design*/
+.postcard-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #e4dccf;
+  padding: 1rem;
+  width: 100%;
+}
+.postcard-container .left-side{
+  width: 40%;
+}
+.postcard-container .left-side img{
+  width: 10rem;
+  padding: 0;
+}
+.postcard-container .right-side{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-left: 1rem;
+  position: relative;
+  font-weight: 600;
+  color: #4a4e85;
+}
+.postcard-container .right-side::before{
+  content: "";
+  position: absolute;
+  border: 0;
+  height: 70%;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  background: #4a4e85;
+}
+.postcard-container .right-side .top-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.postcard-container .right-side .top-section span{
+ margin-top: 1rem; 
+}
+.postcard-container .right-side .top-section img{
+  width: 5rem;
+}
+.postcard-container .right-side .bottom-section{
+  display: flex;
+}
+.postcard-container .right-side .bottom-section ul{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.postcard-container .right-side .bottom-section ul li{
+  line-height: 1.25;
+}
+.postcard-container .right-side .bottom-section ul li .postcard-form{
+  background: transparent;
+  border: none;
+  border-bottom: 2px dashed #00000045;
+  font-weight: 600;
+  color: #4a4e85;
+  min-width: 60%;
+}
+.postcard-container .right-side .bottom-section ul li .postcard-form:focus-visible{
+  outline: none;
+}
+input.postcard-form:not(:placeholder-shown){
+  border-bottom: 2px transparent !important;
+}
+input.postcard-form::placeholder{
+  color: #4a4e857d;
+}
+.postcard-container .right-side .bottom-section ul li:nth-child(3){
+ margin-bottom: .5rem;
+}
+.postcard-container .right-side .bottom-section ul li:nth-child(8){
+ margin-bottom: .5rem;
+}
+.postcard-container .right-side .bottom-section ul li:nth-child(9){
+ margin-bottom: .5rem;
 }
 
 @media only screen and (max-width: 800px) {

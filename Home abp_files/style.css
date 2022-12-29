@@ -635,9 +635,10 @@ Navbar Area
 .select-language-content {
   display: none;
   position: absolute;
-  height: 150px;
+  max-height: 150px;
   overflow-y: scroll;
   width: 100%;
+
   top: 25px;
   left: 0;
   border-radius: 4px;
@@ -665,7 +666,7 @@ Navbar Area
 }
 
 .language-item {
-  padding: 7px 16px;
+  padding: 3px 16px;
   font-size: 14px;
   transition: background-color 0.3s ease;
 }
@@ -3152,11 +3153,9 @@ Buy Now Btn
   background: #f00000;
   border: none;
   color: white;
-  width: 100%;
-  height: 100%;
+  padding: 7px 18px;
   border-radius: 25px 25px 25px 25px;
   font-weight: 700;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
 }
 .btn-search i {
   font-size: 14px;
@@ -3182,6 +3181,7 @@ Buy Now Btn
   background-color: #f8f8f8;
   cursor: pointer;
 }
+
 .country-pincode-search img {
   width: 25px;
   height: 25px;
@@ -3194,7 +3194,7 @@ Buy Now Btn
   top: 45px;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 138px;
   overflow-y: auto;
   z-index: 100;
   background: #fff;
@@ -3570,7 +3570,33 @@ thead tr{
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 1000;
+}
+.pincode-dropdown {
+  height: 400px;
+  overflow-y: scroll;
+}
+.pincode-dropdown::-webkit-scrollbar{
+  width: 7px;
+}
+.pincode-dropdown::-webkit-scrollbar-track{
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+.pincode-dropdown::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 25px;
+}
+.pincode-dropdown::-webkit-scrollbar-thumb:hover{
+  background: #b3b3b3;
+}
+.pincode-input-container {
+  position: relative;
+}
+.cross-arrow-pincode {
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
 }
 
 
@@ -3636,24 +3662,38 @@ margin-left: -14px;
 .pincode-area {
   position: relative;
   /* border: 1px solid #ccc; */
+  width: 100%;
+  margin: 0 auto;
   background-color: #fff;
-  padding: 3px 0;
+  padding: 3px 5px;
   border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px;
+}
+.pincode-area-radius {
+  border-radius: 30px 30px 0 0;
 }
 .pincode-options {
   display: none;
   position: absolute;
-  top: 55px;
+  top: 50px;
   left: 0;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0 0 8px 8px;
   padding: 10px 0;
   background-color: #fff;
-  box-shadow: 2px 4px 4px 2px rgba(0,0,0,.15);
+  box-shadow: 0px 3px 4px 0px rgba(0,0,0,.15);
   z-index: 100;
 }
 
+.pincode-middle {
+  width: 100%;
+}
+.pincode-middle input {
+  margin: 0 4px;
+  background-color: #f8f8f8;
+  border-radius: 35px !important;
+  padding-left: 15px;
+}
 .pincode-ul {
   list-style: none;
   margin: 0 !important;

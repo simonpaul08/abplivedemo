@@ -49,12 +49,132 @@
   /* Navbar CSS */
   .mobile-nav  .logo .logo-mob{
     max-width: 110px;
-    height: 25px;
-    margin-top: -30px;
+    height: 18px;
+    margin-top: -20px;
   }
   .mobile-nav .logo .logo-two {
     display: none;
   }
+  .wrap-item-mob {
+    flex-wrap: wrap;
+  }
+
+  .main-logo {
+    width: 100px;
+    height: 50px;
+    margin-right: 40px;
+  }
+  .main-logo a {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  .logo-btn-area {
+    background-color: #f00;
+    color:white;
+    padding:2px 10px;
+    display: inline;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 800;
+  }
+  .logo-one {
+    width: 47px;
+    height: 36px;
+  }
+  .menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar-nav {
+    flex-direction: row !important;
+  }
+  .navbar-brand {
+    margin-right: 0.4rem;
+  }
+  .live-btn-area .live-btn {
+    padding: 3px 10px;
+  }
+  .main-nav nav .navbar-nav .nav-item a {
+    font-size: 12px;
+    margin: 0 8px;
+  }
+  #select-language-text {
+    display: none;
+  }
+  .selectpicker {
+    margin-top: 12px;
+  }
+  .selectpicker i.fa-chevron-down {
+    display: none;
+  }
+  .select-language-content {
+    width: 100px;
+    left: auto;
+    right: 0;
+  }
+  .main-title .title {
+    font-size: 12px !important;
+  }
+  .btn-search i {
+    font-size: 12px;
+  }
+  .btn-search span {
+    display: none;
+  }
+  .country-pincode-search {
+    width: 65px;
+  }
+  .country-pincode-item p {
+    font-size: 12px;
+  }
+  .pincode-middle input {
+    font-size: 12px !important;
+  }
+  .select-state, .select-post, .select-country, .select-district {
+    width: 48%;
+  }
+  .btn-copy span, .btn-download span {
+    display: none;
+  }
+  .card-body h5{
+    font-size: 15px;
+  }
+  .card-inline-list ul li a {
+    font-size: 12px;
+  }
+
+  .navbar {
+    justify-content: start;
+  }
+  .dropdown-content {
+    display: none;
+    width: 180px;
+  }
+  .flag-dropdown-col {
+    width: 100%;
+  }
+  .flag-dropdown-item {
+    padding: 7px 10px;
+  } 
+  .flag-dropdown-item span {
+    font-size: 12px;
+  } 
+
+  .ad-right, .ad-right-2, .ad-right-3 {
+    display: none !important;
+  }
+  .ad-top-mob {
+    display: flex !important;
+  }
+  .footer-button-secondary button {
+    font-size: 14px;
+  }
+  .footer-button button {
+    font-size: 14px;
+  }
+
   .d-in-line {
     display: none;
   }
@@ -92,6 +212,16 @@
   }
   /* Navbar CSS End */
   /* Main Banner CSS */
+
+  .dropbtn {
+    padding: 0px 8px;
+    font-size: 12px;
+  }
+  .dropdown img {
+    margin-left: 6px;
+    margin-bottom: 2px;
+    width: 14px;
+}
   .banner-content {
     padding-top: 110px;
     padding-bottom: 20px;
@@ -1343,6 +1473,10 @@
     height: 50px;
     padding: 0 0 0 15px;
   }
+  .side-nav {
+    display: none;
+  }
+
   .search-overlay .search-form form button {
     position: absolute;
     right: 5px;

@@ -542,10 +542,11 @@ function populateCountries() {
 window.addEventListener('DOMContentLoaded', populateCountries)
 
 var selectLanguageText = document.getElementById('select-language-text')
+let selectLanguage = document.querySelector('.select-language')
 var languageItems = document.querySelectorAll('.language-item')
 var selectLanguageContent = document.querySelector('.select-language-content')
 
-selectLanguageText.addEventListener('click', () => {
+selectLanguage.addEventListener('click', () => {
     selectLanguageContent.classList.toggle('show')
 })
 

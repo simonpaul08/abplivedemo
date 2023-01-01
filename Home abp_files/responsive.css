@@ -2550,6 +2550,12 @@
   .card-sidebar ul li {
     width: 100%;
   }
+  .breadcrumb-item a {
+    font-size: 13px;
+  }
+  .breadcrumb-item {
+    font-size: 13px !important;
+  }
 }
 
 @media only screen and (max-width: 1199px){

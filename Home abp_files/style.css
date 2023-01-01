@@ -803,6 +803,9 @@ Navbar Area
   color: #ff3900 !important;
 }
 
+.breadcrumb-item a {
+  color: #f00;
+}
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover,
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a :focus,
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a .active {

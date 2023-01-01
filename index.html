@@ -124,7 +124,8 @@
 
 
                     <div class="dropdown">
-                        <button class="dropbtn gradient-text">PinCode<i
+                        <button class="dropbtn gradient-text"><span>PinCode</span> 
+                            <i
                                 class="fa-solid fa-sort-down ms-2 dropdown-icon"></i></button>
                         <div class="dropdown-content pincode-dropdown">
                             <div
@@ -196,14 +197,14 @@
                             </li>
 
                         </ul>
-                        <div class="col-md-2">
+                        <div class="col-md-3">
                             <div
                                 class="selectpicker d-flex justify-content-end align-items-center select-language-container">
                                 <div class="select-language d-flex justify-content-end align-items-center">
-                                    <i class="fa fa-globe mb-1" aria-hidden="true"></i>
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
                                     <p class="mb-0 mx-1" id="select-language-text">Select Language</p>
-                                    <i class="fa-solid fa-chevron-down mb-1"></i>
-                                    <div class="select-language-content hide">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <div class="select-language-content">
                                         <div class="language-item">Hindi</div>
                                         <div class="language-item">English</div>
                                         <div class="language-item">Gujarati</div>
@@ -228,8 +229,8 @@
 
     <div class="main-container">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-2 large-view-only">
+            <div class="row justify-content-center">
+                <div class="col-xl-2 col-md-2 large-view-only ad-col">
                     <div class="d-flex justify-content-center align-items-center ad-left">
                         196 X 404
                     </div>
@@ -240,8 +241,8 @@
                         196 X 404
                     </div>
                 </div>
-                <div class="col-12 col-md-7">
-                    <div class="add-box large-view-only">
+                <div class="col-xl-7 col-12">
+                    <div class="add-box large-view-only ad-col">
                         <!-- <img src="./Home abp_files/add-top.png" class="img-fluid"> -->
                         <div class="d-flex justify-content-center align-items-center ad-top">
                             746 X 127
@@ -250,6 +251,14 @@
                     </div>
                     <div class="d-flex justify-content-center align-items-center ad-top-mob">
                         100% x 100
+                    </div>
+                    <div class="location-box md-col">
+                        <h4> Your Current Location Pincode </h4>
+                        <h6> (Allow the Location) </h6>
+                        <div class="address">
+                            <h3> 500016 </h3>
+                            <p> Hyderabad, Telangana </p>
+                        </div>
                     </div>
                     <div class="search-area-container">
                         <div class="main-title">
@@ -266,7 +275,7 @@
                                         <div class="search-btn-group">
                                             <div class="wrapper wrapper-countries">
                                                 <div class="select-btn select-btn-countries d-flex">
-                                                    <span>Select Country</span>
+                                                    <span class="search-span">Select Country</span>
                                                 </div>
                                                 <div class="content content-countries">
                                                     <div class="search">
@@ -297,7 +306,7 @@
                                         <div class="search-btn-group">
                                             <div class="wrapper wrapper-state">
                                                 <div class="select-btn select-btn-state">
-                                                    <span>Select State</span>
+                                                    <span class="search-span">Select State</span>
                                                 </div>
                                                 <div class="content content-state">
                                                     <div class="search">
@@ -328,7 +337,7 @@
                                         <div class="search-btn-group">
                                             <div class="wrapper wrapper-district">
                                                 <div class="select-btn select-btn-district">
-                                                    <span>Select District</span>
+                                                    <span class="search-span">Select District</span>
                                                 </div>
                                                 <div class="content content-district">
                                                     <div class="search">
@@ -358,7 +367,7 @@
                                         <div class="search-btn-group">
                                             <div class="wrapper wrapper-post">
                                                 <div class="select-btn select-btn-post">
-                                                    <span>Select Post</span>
+                                                    <span class="search-span">Select Post</span>
                                                 </div>
                                                 <div class="content content-post">
                                                     <div class="search">
@@ -408,7 +417,7 @@
                                 <div class="pincode-middle d-flex align-items-center pincode-input-container">
                                     <input type="search" class="mob-mb form-control line-height border-none"
                                         placeholder="Enter Pincode to Search Post Office" name="uname"
-                                        style="font-size:12px !important; border: none;" id="pincode-input">
+                                        style="border: none;" id="pincode-input">
                                     <i class="fa-solid fa-xmark cross-mark cross-arrow-pincode"></i>
                                 </div>
                                 <div class="pincode-right d-flex align-items-center">
@@ -446,68 +455,68 @@
 
                                     <div class="table-body">
                                         <div class="table-flex table-border">
-                                            <div class="col-12 col-sm-12 col-md-6 table-border-right">
+                                            <div class="col-12 col-lg-6 table-border-right">
                                                 <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-sm-6 col-md-6 table-title">Post Office</p>
+                                                    <p class="col-6 col-sm-6 col-md-6 table-title ps-2 ps-lg-0">Post Office</p>
                                                     <p class="col-6 col-sm-6 col-md-6 table-des">Sutahata</p>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Post Office Type</p>
+                                                    <p class="col-6 col-md-6 table-title ps-2 ps-lg-0">Post Office Type</p>
                                                     <p class="col-6 col-md-6 table-des">Branch Office</p>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Pincode or Postal Code</p>
+                                                    <p class="col-6 col-md-6 table-title ps-2 ps-lg-0">Pincode or Postal Code</p>
                                                     <p class="col-6 col-md-6 table-des">721635</p>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Postal Taluk</p>
+                                                    <p class="col-6 col-md-6 table-title ps-2 ps-lg-0">Postal Taluk</p>
                                                     <p class="col-6 col-md-6 table-des">Sutahata</p>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Postal Division</p>
+                                                    <p class="col-6 col-md-6 table-title ps-2 ps-lg-0">Postal Division</p>
                                                     <p class="col-6 col-md-6 table-des">Tamluk</p>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Postal Region</p>
+                                                    <p class="col-6 col-md-6 table-title ps-2 ps-lg-0">Postal Region</p>
                                                     <p class="col-6 col-md-6 table-des">South Bengal</p>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Postal Circle</p>
+                                                    <p class="col-6 col-md-6 table-title ps-2 ps-lg-0">Postal Circle</p>
                                                     <p class="col-6 col-md-6 table-des">South Bengal</p>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">District</p>
+                                                    <p class="col-6 col-md-6 table-title ps-2 ps-lg-0">District</p>
                                                     <p class="col-6 col-md-6 table-des">East Medinipur</p>
                                                 </div>
 
                                             </div>
-                                            <div class="col-12 col-sm-12 col-md-6">
-                                                <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">State</p>
+                                            <div class="col-12 col-lg-6">
+                                                <div class="col-12 col-sm-12 col-md-12 table-row" >
+                                                    <p class="col-6 col-md-6 table-title ps-2">State</p>
                                                     <p class="col-6 col-md-6 table-des">West Bengal</p>
                                                 </div>
-                                                <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Country</p>
+                                                <div class="col-12 col-sm-12 col-md-12 table-row" >
+                                                    <p class="col-6 col-md-6 table-title ps-2">Country</p>
                                                     <p class="col-6 col-md-6 table-des">INDIA</p>
                                                 </div>
-                                                <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Delivery Status</p>
+                                                <div class="col-12 col-sm-12 col-md-12 table-row" >
+                                                    <p class="col-6 col-md-6 table-title ps-2">Delivery Status</p>
                                                     <p class="col-6 col-md-6 table-des">Delivery</p>
                                                 </div>
-                                                <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Related Sub Office</p>
+                                                <div class="col-12 col-sm-12 col-md-12 table-row" >
+                                                    <p class="col-6 col-md-6 table-title ps-2">Related Sub Office</p>
                                                     <p class="col-6 col-md-6 table-des">NA</p>
                                                 </div>
-                                                <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Related Head Office</p>
+                                                <div class="col-12 col-sm-12 col-md-12 table-row" >
+                                                    <p class="col-6 col-md-6 table-title ps-2">Related Head Office</p>
                                                     <p class="col-6 col-md-6 table-des">Tamluk H.O</p>
                                                 </div>
-                                                <div class="col-12 col-sm-12 col-md-12 table-row">
-                                                    <p class="col-6 col-md-6 table-title">Telephone No</p>
+                                                <div class="col-12 col-sm-12 col-md-12 table-row" >
+                                                    <p class="col-6 col-md-6 table-title ps-2">Telephone No</p>
                                                     <p class="col-6 col-md-6 table-des">03224-281334</p>
                                                 </div>
                                                 <div class="col-12 col-sm-12 col-md-12 table-row align-items-start">
-                                                    <p class="col-6 col-md-6 table-title">Contact Address</p>
+                                                    <p class="col-6 col-md-6 table-title ps-2">Contact Address</p>
                                                     <p class="col-6 col-md-6 table-des">Postmaster, Post Office SUTAHATA
                                                         (SUB OFFICE), EAST MEDINIPUR, WEST BENGAL (WB), India (IN), Pin
                                                         Code - 721635</p>
@@ -646,7 +655,8 @@
                         <!--Post office same pincode-->
                         <div class="card accordion" id="accordionPanelsStayOpenExample">
                             <div class="card-header">
-                                <h3 class="title-secondary">Other 9 Post Offices with Same Pincode <span
+                                <h3 class="title-secondary">Other 9 Post Offices with Same Pincode 
+                                    <span
                                         style="color:#000">721635</span>, District East
                                     Medinipur
                                 </h3>
@@ -685,7 +695,7 @@
                         </div>
                         <div class="add-box">
                             <div class="d-flex justify-content-center align-items-center ad-top">
-                                746 X 127
+                                100% X 127
                             </div>
                         </div>
 
@@ -787,7 +797,7 @@
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
                                     <div class="card-inline-list card-inline-list-dark">
-                                        <table class="table">
+                                        <table class="table table-striped mb-0">
                                             <thead>
                                                 <tr>
                                                     <th>
@@ -865,7 +875,7 @@
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body">
                                     <div class="card-inline-list card-inline-list-dark">
-                                        <table class="table">
+                                        <table class="table table-striped mb-0">
                                             <thead>
                                                 <tr>
                                                     <th>
@@ -990,6 +1000,11 @@
                             </div>
                         </div>
 
+
+                        <div class="d-flex justify-content-center align-items-center ad-top-mob">
+                            100% x 100
+                        </div>
+
                         <!--pin index-->
                         <div class="card accordion" id="accordionPanelsStayOpenExample">
                             <div class="card-header">
@@ -1040,8 +1055,11 @@
                                         district.</p>
                                     <p class="fw-7">Here's an example of decoding your pin code. The pin code of Central
                                         Delhi is 110001.</p>
-                                    <img src="./Home abp_files/postal-code.png">
-                                    <ul style="margin-top:10px;">
+                                        <div class="img-center">
+                                            <img src="./Home abp_files/postal-code.png">
+                                        </div>
+
+                                    <ul style="margin-top:10px; padding: 3px;">
                                         <li class="fw-7">This first digit indicates: northern region = 1</li>
                                         <li class="fw-7">The first 2 digits indicate: postal circle Delhi = 11</li>
                                         <li class="fw-7">The third digit indicates: Sorting district = 0</li>
@@ -1067,7 +1085,7 @@
 
                             <div id="close-card11" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
-                                <div class="card-body">
+                                <div class="card-body img-center">
                                     <img src="./Home abp_files/inida-map.jpg">
                                 </div>
                             </div>
@@ -1204,8 +1222,8 @@
                                 data-bs-parent="#accordionPanelsStayOpenExample">
                                 <div class="card-body" style="padding: 0;">
 
-                                    <div class="d-flex justify-content-between align-items-center wrap-item-mob">
-                                        <div class="card-sidebar">
+                                    <div class="d-flex justify-content-between wrap-item-mob">
+                                        <div class="card-sidebar card-single">
                                             <ul class="list-group list-group-flush name-wise-district">
                                                 <li
                                                     class="list-group-item fw-7 d-flex justify-content-between name-wise-district-item">
@@ -1228,7 +1246,7 @@
                                                     Rajasthan <i class="fa-solid fa-chevron-right mb-1"></i></li>
                                             </ul>
                                         </div>
-                                        <div class="card-main-content name-wise-district-options">
+                                        <div class="card-main-content name-wise-district-options card-single">
                                             <div
                                                 class="card-content-block d-flex justify-content-between align-items-center">
                                                 <p>Delhi District</p>
@@ -1276,10 +1294,10 @@
                                 <div class="card-body" style="padding: 0;">
 
                                     <div class="d-flex justify-content-between align-items-center wrap-item-mob">
-                                        <div class="card-sidebar d-flex justify-content-center align-items-center"
-                                            style="padding: 0;">
-                                            <ul class="list-group list-group-flush"
-                                                style="margin-right: 12px; box-shadow: rgb(0 0 0 / 6%) 2px 0px 2px 0px; ;padding: 4px;">
+                                        <div class="card-sidebar d-flex justify-content-center align-items-center card-single"
+                                            style="padding: 2px 5px;">
+                                            <ul class="list-group list-group-flush card-double"
+                                                style="padding: 4px;">
                                                 <li
                                                     class="list-group-item fw-7 d-flex justify-content-between name-wise-post-item">
                                                     Delhi <i class="fa-solid fa-chevron-right mb-1"></i></li>
@@ -1300,8 +1318,8 @@
                                                     class="list-group-item fw-7 d-flex justify-content-between name-wise-post-item">
                                                     Rajasthan <i class="fa-solid fa-chevron-right mb-1"></i></li>
                                             </ul>
-                                            <ul class="list-group list-group-flush name-wise-post-district"
-                                                style="box-shadow: rgb(0 0 0 / 0%) 2px 0px 2px 0px;;padding: 4px;">
+                                            <ul class="list-group list-group-flush name-wise-post-district card-double"
+                                                style="padding: 4px;">
                                                 <li class="list-group-item fw-7 d-flex justify-content-between">District
                                                     <i class="fa-solid fa-chevron-right mb-1"></i>
                                                 </li>
@@ -1319,7 +1337,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="card-main-content name-wise-post-options">
+                                        <div class="card-main-content name-wise-post-options card-single">
                                             <div
                                                 class="card-content-block d-flex justify-content-between align-items-center">
                                                 <p>Post Office Name</p>
@@ -1364,13 +1382,13 @@
 
                             <div id="close-card11" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionPanelsStayOpenExample">
-                                <div class="card-body" style="padding: 0;">
+                                <div class="card-body" style="padding: 0px;">
 
                                     <div class="d-flex justify-content-between align-items-center wrap-item-mob">
-                                        <div class="card-sidebar d-flex justify-content-center align-items-center"
-                                            style="padding:0;">
-                                            <ul class="list-group list-group-flush"
-                                                style="margin-right: 12px; box-shadow: rgb(0 0 0 / 6%) 2px 0px 2px 0px;padding: 4px;">
+                                        <div class="card-sidebar d-flex justify-content-center align-items-center card-single"
+                                            style="padding: 2px 5px;">
+                                            <ul class="list-group list-group-flush card-double"
+                                                style="padding: 4px;">
                                                 <li
                                                     class="list-group-item fw-7 d-flex justify-content-between name-wise-location-item">
                                                     District 1
@@ -1395,7 +1413,7 @@
                                                     class="list-group-item fw-7 d-flex justify-content-between name-wise-location-item">
                                                     District 5 <i class="fa-solid fa-chevron-right mb-1"></i></li>
                                             </ul>
-                                            <ul class="list-group list-group-flush name-wise-location-post"
+                                            <ul class="list-group list-group-flush name-wise-location-post card-double"
                                                 style="box-shadow: rgb(0 0 0 / 0%) 2px 0px 2px 0px;padding: 4px;">
                                                 <li class="list-group-item fw-7 d-flex justify-content-between">Post
                                                     Office
@@ -1419,7 +1437,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="card-main-content name-wise-location-options">
+                                        <div class="card-main-content name-wise-location-options card-single">
                                             <div
                                                 class="card-content-block d-flex justify-content-between align-items-center">
                                                 <p>Location Name</p>
@@ -1974,7 +1992,7 @@
                     </div>
 
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-xl-3 col-md-3 ad-col">
                     <div class="d-flex justify-content-center align-items-center ad-right">
                         302 X 145
                     </div>
@@ -2000,7 +2018,7 @@
                             <div class="card-header panel panel-primary">
                                 <div class="panel-heading"> 1st 2 Digits of Pincode, Postal Circle </div>
                             </div>
-                            <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush" style="padding: 4px;">
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 11 - Delhi </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 12-13 Haryana </li>
                                 <li class="list-group-item fw-7"> <i class="fa fa-check"></i> 14-16 Punjab </li>

@@ -286,7 +286,7 @@ searchInpCountries.addEventListener("keyup", () => {
     optionsCountries.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
 });
 crossArrowcCountries.addEventListener('click', () => {
-    selectBtnCountries.innerHTML = `<span>Select Country</span>`
+    selectBtnCountries.innerHTML = `<span class="search-span">Select Country</span>`
     downArrowCountries.style.display = 'block'
     crossArrowcCountries.style.display = 'none'
 })
@@ -304,7 +304,7 @@ function addPincodeFlag() {
     countries.map(country => {
         countryPincodeOptionsUl.innerHTML += `<li class="country-pincode-item">
                                                 <img src="./1x1/${country.countryCode.toLowerCase()}.svg" alt="flag-icon" data-item="${country.countryCode.toLowerCase()}">
-                                                <p class="mb-0 mt-1">${country.countryCode}</p>
+                                                <p class="mb-0 mt-1" style="color: #000">${country.countryCode}</p>
                                             </li>`
     })
 
@@ -346,7 +346,7 @@ function updateStateName(selectedLi) {
     searchInpState.value = "";
     addState(selectedLi.innerText);
     wrapperState.classList.remove("active");
-    selectBtnState.firstElementChild.innerText = selectedLi.innerText;
+    selectBtnState.innerHTML = `<span>${selectedLi.innerText}</span>`;
     downArrowState.style.display = 'none'
     crossArrowState.style.display = 'block'
 }
@@ -362,7 +362,7 @@ searchInpState.addEventListener("keyup", () => {
 });
 
 crossArrowState.addEventListener('click', () => {
-    selectBtnState.firstElementChild.innerText = "Select State"
+    selectBtnState.innerHTML = `<span class="search-span">Select Post</span>`
     downArrowState.style.display = 'block'
     crossArrowState.style.display = 'none'
 })
@@ -392,7 +392,7 @@ function updateDistrictName(selectedLi) {
     searchInpDistrict.value = "";
     addDistrict(selectedLi.innerText);
     wrapperDistrict.classList.remove("active");
-    selectBtnDistrict.firstElementChild.innerText = selectedLi.innerText;
+    selectBtnDistrict.innerHTML = `<span>${selectedLi.innerText}</span>`;
     downArrowDistrict.style.display = 'none'
     crossArrowDistrict.style.display = 'block'
 }
@@ -402,13 +402,13 @@ searchInpDistrict.addEventListener("keyup", () => {
     arr = countries.filter(data => {
         return data.toLowerCase().startsWith(searchWord);
     }).map(data => {
-        return `<li onclick="updateDistrictName(this)">${data}</li>`;
+        return `<li onclick="updateDistrictName(this)" style="color: #000">${data}</li>`;
     }).join("");
     optionsDistrict.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
 });
 
 crossArrowDistrict.addEventListener('click', () => {
-    selectBtnDistrict.firstElementChild.innerText = 'Select District'
+    selectBtnDistrict.innerHTML = `<span class="search-span">Select District</span>`
     downArrowDistrict.style.display = 'block'
     crossArrowDistrict.style.display = 'none'
 })
@@ -430,7 +430,7 @@ let posts = ['Post1', 'Post2', 'Post3', 'Post4', 'Post6', 'Post7', 'Post8', 'Pos
 function addPost(selectedCountry) {
     optionsPost.innerHTML = "";
     posts.forEach(post => {
-        let li = `<li onclick="updatePost(this)">${post}</li>`;
+        let li = `<li onclick="updatePost(this)" style="color: #000">${post}</li>`;
         optionsPost.insertAdjacentHTML("beforeend", li);
     });
 }
@@ -439,7 +439,7 @@ function updatePost(selectedLi) {
     searchInpPost.value = "";
     addPost(selectedLi.innerText);
     wrapperPost.classList.remove("active");
-    selectBtnPost.firstElementChild.innerText = selectedLi.innerText;
+    selectBtnPost.innerHTML = `<span>${selectedLi.innerText}</span>`;
     downArrowPost.style.display = 'none'
     crossArrowPost.style.display = 'block'
 }
@@ -449,13 +449,13 @@ searchInpPost.addEventListener("keyup", () => {
     arr = countries.filter(data => {
         return data.toLowerCase().startsWith(searchWord);
     }).map(data => {
-        return `<li onclick="updatePost(this)">${data}</li>`;
+        return `<li onclick="updatePost(this) style="color: #000"">${data}</li>`;
     }).join("");
     optionsDistrict.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! Country not found</p>`;
 });
 
 crossArrowPost.addEventListener('click', () => {
-    selectBtnPost.firstElementChild.innerText = 'Select Post'
+    selectBtnPost.innerHTML = `<span class="search-span">Select Post</span>`
     downArrowPost.style.display = 'block'
     crossArrowPost.style.display = 'none'
 })
@@ -546,20 +546,31 @@ let selectLanguage = document.querySelector('.select-language')
 var languageItems = document.querySelectorAll('.language-item')
 var selectLanguageContent = document.querySelector('.select-language-content')
 
-selectLanguage.addEventListener('click', () => {
-    selectLanguageContent.classList.toggle('show')
-})
-
 languageItems.forEach(item => {
     item.addEventListener('click', () => {
         selectLanguageText.innerText = item.textContent
-        selectLanguageContent.classList.toggle('show')
     })
 })
 
 
+function hideSearchOnClick(e) {
+    let element = e.target
+    let parentEle = element.parentElement
+    let icon = parentEle.querySelector('.uil-search')
+    let input = parentEle.querySelector('input')
+    icon.classList.add('hide-search')
+    input.classList.add('input-pad')
+}
+
+searchInpCountries.addEventListener('click', hideSearchOnClick)
+searchInpState.addEventListener('click', hideSearchOnClick)
+searchInpDistrict.addEventListener('click', hideSearchOnClick)
+searchInpPost.addEventListener('click', hideSearchOnClick)
+
+
 // close popups
 window.addEventListener('click', (e) => {
+
     // pincode
     if (e.target != pincodeOptions && e.target != pincodeInput) {
         pincodeOptions.classList.remove('pincode-show')
@@ -569,30 +580,44 @@ window.addEventListener('click', (e) => {
         }
     }
 
-
     // country
     const selectCountry = document.querySelector('.select-country')
+    let iconCountry = selectCountry.querySelector('.uil-search')
+    let inputCountry = selectCountry.querySelector('input')
     if (!selectCountry.contains(e.target)) {
         contentCountries.classList.remove("show");
+        iconCountry.classList.remove('hide-search')
+        inputCountry.classList.remove('input-pad')
     }
 
     // state
     const selectState = document.querySelector('.select-state')
+    let iconState = selectState.querySelector('.uil-search')
+    let inputState = selectState.querySelector('input')
     if (!selectState.contains(e.target)) {
         contentState.classList.remove('show')
+        iconState.classList.remove('hide-search')
+        inputState.classList.remove('input-pad')
     }
-
 
     // district 
     const selectDistrict = document.querySelector('.select-district')
+    let iconDistrict = selectDistrict.querySelector('.uil-search')
+    let inputDistrict = selectDistrict.querySelector('input')
     if (!selectDistrict.contains(e.target)) {
         contentDistrict.classList.remove('show')
+        iconDistrict.classList.remove('hide-search')
+        inputDistrict.classList.remove('input-pad')
     }
 
     // post
     const selectPost = document.querySelector('.select-post')
+    let iconPost = selectPost.querySelector('.uil-search')
+    let inputPost = selectPost.querySelector('input')
     if (!selectPost.contains(e.target)) {
         contentPost.classList.remove('show')
+        iconPost.classList.remove('hide-search')
+        inputPost.classList.remove('input-pad')
     }
 
     // country pincode search
@@ -600,9 +625,6 @@ window.addEventListener('click', (e) => {
         countryPincodeOptions.classList.remove('block-show')
     }
 
-    // select language 
-    const selectLanguageContainer = document.querySelector('.select-language-container')
-    if (!selectLanguageContainer.contains(e.target)) {
-        selectLanguageContent.classList.remove('show')
-    }
+
+
 })

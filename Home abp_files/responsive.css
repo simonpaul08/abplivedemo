@@ -165,9 +165,7 @@
   .ad-right, .ad-right-2, .ad-right-3 {
     display: none !important;
   }
-  .ad-top-mob {
-    display: flex !important;
-  }
+
   .footer-button-secondary button {
     font-size: 14px;
   }
@@ -2290,7 +2288,16 @@
   /* Coming Soon End */
 }
 
+
+@media only screen and (max-width: 805px) {
+  .table-border-right {
+    border-right: none;
+
+  }
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
   .main-nav nav .navbar-nav .nav-item a {
     margin-left: 8px;
     margin-right: 8px;
@@ -2319,7 +2326,7 @@
     padding: 10px 16px;
   }
   .navbar-light .navbar-brand img {
-    max-width: 130px;
+    max-width: 85px;
   }
   .banner-shape-right img {
     max-width: 330px;
@@ -2488,6 +2495,76 @@
   }
   .footer-widget .footer-list li {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 570px){
+  .location-box h4 {
+    font-size: 16px;
+  }
+  .location-box h6 {
+    font-size: 14px;
+  }
+  .select-btn {
+    font-size: 13px;
+  }
+  .pincode-middle input {
+    font-size: 13px !important;
+  }
+  .card-single {
+    width: 100%;
+  }
+  .card-double {
+    width: 50%;
+  }
+  .card-sidebar {
+    border-right: none;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px 4px !important;
+  }
+  .card-content-block p {
+    font-size: 13px;
+  }
+  .card-inline-list ul li a {
+    font-size: 13px;
+  }
+  .card-inline-list-dark table thead th p {
+    font-size: 8px;
+  }
+  .table-title {
+    font-size: 13px;
+  }
+  .table-des {
+    font-size: 13px
+  }
+  p.fw-7 {
+    font-size: 13px;
+  }
+  li.fw-7 {
+    font-size: 13px;
+  }
+  .card-inline-list-dark h4 {
+    font-size: 16px;
+  }
+  .card-sidebar ul li {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1199px){
+  .ad-col {
+    display: none;
+  }
+  .ad-top-mob {
+    display: flex !important;
+    margin: 1rem 0;
+  }
+  .md-col {
+    display: block;
+  }
+  .img-center {
+    text-align: center;
   }
 }
 

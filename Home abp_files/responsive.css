@@ -115,7 +115,8 @@
     right: 0;
   }
   .main-title .title {
-    font-size: 12px !important;
+    font-size: 14px !important;
+    text-align: center;
   }
   .btn-search i {
     font-size: 12px;
@@ -2499,6 +2500,10 @@
 }
 
 @media only screen and (max-width: 570px){
+  .main-title .title{
+    font-size: 14px;
+    text-align: center;
+  }
   .location-box h4 {
     font-size: 16px;
   }

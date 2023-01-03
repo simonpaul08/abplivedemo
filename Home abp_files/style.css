@@ -3788,20 +3788,32 @@ margin-left: -14px;
 .ad-top {
   width: 100%;
   height: 127px;
-  background-color: rgb(148, 148, 148);
+  padding: 5px;
   color: #fff;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px;
+}
+.ad-top-content {
+  width: 100%;
+  height: 100%;
+  background-color: #FFFBAC;
+  border-radius: 4px;
 }
 .ad-left {
   width: 100%;
   height: 404px;
-  background-color: rgb(148, 148, 148);
+  padding: 5px;
   color: #fff;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px;
 }
 .ad-left-2 {
   width: 100%;
   height: 94px;
-  background-color: #333;
+  padding: 5px;
   color: #fff;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px;
 }
 .ad-top-mob {
   display: none !important;
@@ -3821,20 +3833,26 @@ margin-left: -14px;
 .ad-right {
   width: 100%;
   height: 145px;
-  background-color: rgb(148, 148, 148);
+  padding: 5px;
   color: #fff;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px;
 }
 .ad-right-2 {
   width: 100%;
   height: 626px;
-  background-color: rgb(148, 148, 148);
+  padding: 5px;
   color: #fff;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px;
 }
 .ad-right-3 {
   width: 100%;
   height: 626px;
-  background-color: rgb(148, 148, 148);
+  padding: 5px;
   color: #fff;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 0px 5px;
 }
 
 /* card sidebar */

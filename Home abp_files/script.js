@@ -8,24 +8,24 @@ const wrapperCountries = document.querySelector(".wrapper-countries"),
     contentCountries = document.querySelector('.content-countries')
 
 let countries = [
-    { "countryCode": "AD", "countryName": "Andorra", "Image Name": "Andorra-AD www.livepincode.com" },
+    { "countryCode": "AD", "countryName": "Andorra", "Image Name": "Andorra-AD www.livepincode.com", "locked": "true" },
     { "countryCode": "AE", "countryName": "United Arab Emirates", "Image Name": "United Arab Emirates-AE www.livepincode.com" },
     { "countryCode": "AF", "countryName": "Afghanistan", "Image Name": "Afghanistan-AF www.livepincode.com" },
     { "countryCode": "AG", "countryName": "Antigua and Barbuda", "Image Name": "Antigua and Barbuda-AG www.livepincode.com" },
     { "countryCode": "AI", "countryName": "Anguilla", "Image Name": "Anguilla-AI www.livepincode.com" },
     { "countryCode": "AL", "countryName": "Albania", "Image Name": "Albania-AL www.livepincode.com" },
     { "countryCode": "AM", "countryName": "Armenia", "Image Name": "Armenia-AM www.livepincode.com" },
-    { "countryCode": "AO", "countryName": "Angola", "Image Name": "Angola-AO www.livepincode.com" },
+    { "countryCode": "AO", "countryName": "Angola", "Image Name": "Angola-AO www.livepincode.com", "locked": "true"},
     { "countryCode": "AQ", "countryName": "Antarctica", "Image Name": "Antarctica-AQ www.livepincode.com" },
     { "countryCode": "AR", "countryName": "Argentina", "Image Name": "Argentina-AR www.livepincode.com" },
     { "countryCode": "AS", "countryName": "American Samoa", "Image Name": "American Samoa-AS www.livepincode.com" },
     { "countryCode": "AT", "countryName": "Austria", "Image Name": "Austria-AT www.livepincode.com" },
-    { "countryCode": "AU", "countryName": "Australia", "Image Name": "Australia-AU www.livepincode.com" },
+    { "countryCode": "AU", "countryName": "Australia", "Image Name": "Australia-AU www.livepincode.com", "locked": "true"},
     { "countryCode": "AW", "countryName": "Aruba", "Image Name": "Aruba-AW www.livepincode.com" },
     { "countryCode": "AX", "countryName": "Åland", "Image Name": "Åland-AX www.livepincode.com" },
     { "countryCode": "AZ", "countryName": "Azerbaijan", "Image Name": "Azerbaijan-AZ www.livepincode.com" },
     { "countryCode": "BA", "countryName": "Bosnia and Herzegovina", "Image Name": "Bosnia and Herzegovina-BA www.livepincode.com" },
-    { "countryCode": "BB", "countryName": "Barbados", "Image Name": "Barbados-BB www.livepincode.com" },
+    { "countryCode": "BB", "countryName": "Barbados", "Image Name": "Barbados-BB www.livepincode.com", "locked": "true" },
     { "countryCode": "BD", "countryName": "Bangladesh", "Image Name": "Bangladesh-BD www.livepincode.com" },
     { "countryCode": "BE", "countryName": "Belgium", "Image Name": "Belgium-BE www.livepincode.com" },
     { "countryCode": "BF", "countryName": "Burkina Faso", "Image Name": "Burkina Faso-BF www.livepincode.com" },
@@ -535,7 +535,10 @@ const pincodeDropdownOptions = document.querySelector('.pincode-dropdown-options
 function populateCountries() {
     countries.map(country => {
         pincodeDropdownOptions.innerHTML += `<div class="flag-dropdown-col">
-    <p class="flag-dropdown-item"><img src="./1x1/${country.countryCode.toLowerCase()}.svg" alt="flag"><span>${country.countryName}</span></p></div>`
+    <p class="flag-dropdown-item"><img src="./1x1/${country.countryCode.toLowerCase()}.svg" alt="flag">
+    <span>${country.countryName}</span>
+    ${country.locked ?`<span class="ms-2 mb-2"><i class="fa-solid fa-lock"></i></span>` : ""}
+    </p></div>`
     })
 }
 
